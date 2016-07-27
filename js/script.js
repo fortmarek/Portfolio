@@ -55,6 +55,7 @@ $(window).on('scroll', function(){
         $('.slide').addClass('animated fadeInUp');
         shouldSlide = false;
     }
+    
 });
 
 $('.portfolio-link').click(function() {
