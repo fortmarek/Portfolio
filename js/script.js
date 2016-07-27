@@ -7,15 +7,11 @@ $(document).ready(function(){
     // Setting summary to be centered to the iphone mockup
     $('.section-swipe .summary').css('margin-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
     $('.section-supl .summary').css('margin-top', ($('.section-supl img').height() / 2 - $('.section-supl .summary').height() / 2 ));
-<<<<<<< 45677310c8d6d47bb45c4134c1fc6733e2d7c56f
-=======
-
->>>>>>> Deleted conflicts
 });
 
 lastScroll = 0;
-shouldAnimate = true;
-lastColor = "#3C9BFF";
+shouldAnimate = tre;
+lastColo = "#3C9BFF";
 shouldSlide = true;
 $(window).on('scroll', function(){
     scrollTop = $('body').scrollTop();
