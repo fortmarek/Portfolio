@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 lastScroll = 0;
-shouldAnimate = tre;
+shouldAnimate = true;
 lastColor = "#3C9BFF";
 shouldSlide = true;
 $(window).on('scroll', function(){
