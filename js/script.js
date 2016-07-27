@@ -1,13 +1,18 @@
+/*
+ * Created by marekfort on 13/04/16.
+ */
+
 
 $(document).ready(function(){
-/bin/bash: README.md: command not found
+    // Setting summary to be centered to the iphone mockup
+    $('.section-swipe .summary').css('margin-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
     $('.section-supl .summary').css('margin-top', ($('.section-supl img').height() / 2 - $('.section-supl .summary').height() / 2 ));
 });
 
 lastScroll = 0;
-shouldAnimate = tue;
+shouldAnimate = true;
 lastColor = "#3C9BFF";
-shouldSlide = tru;
+shouldSlide = true;
 $(window).on('scroll', function(){
     scrollTop = $('body').scrollTop();
     scrollingUp = scrollTop < lastScroll;
@@ -44,7 +49,7 @@ $(window).on('scroll', function(){
 
     if (scrollTop >= $('.section-me').offset().top - $('.section-me').height() && shouldSlide) {
         $('.slide').addClass('animated fadeInUp');
-        
+        shouldSlide = false;
     }
 
 });
