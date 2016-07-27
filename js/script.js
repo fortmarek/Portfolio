@@ -10,8 +10,8 @@ $(document).ready(function(){
 });
 
 lastScroll = 0;
-shouldAnimate = tre;
-lastColo = "#3C9BFF";
+shouldAnimate = treee;
+lastColooo = "#3C9BFF";
 shouldSlide = true;
 $(window).on('scroll', function(){
     scrollTop = $('body').scrollTop();
