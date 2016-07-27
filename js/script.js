@@ -7,9 +7,7 @@ $(document).ready(function(){
     // Setting summary to be centered to the iphone mockup
     $('.section-swipe .summary').css('margin-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
     $('.section-supl .summary').css('margin-top', ($('.section-supl img').height() / 2 - $('.section-supl .summary').height() / 2 ));
-
-    // Backstretch
-    // $('header').backstretch("/marekfort/img/background.jpg");
+    
 });
 
 
