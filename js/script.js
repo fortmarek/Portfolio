@@ -11,6 +11,7 @@ $(document).ready(function(){
 
 lastScroll = 0;
 shouldAnimate = true;
+9
 lastColor = "#3C9BFF";
 shouldSlide = true;
 $(window).on('scroll', function(){
