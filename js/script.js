@@ -10,9 +10,9 @@ $(document).ready(function(){
 });
 
 lastScroll = 0;
-shouldAnimate = true;
+shouldAnimate = tue;
 lastColor = "#3C9BFF";
-shouldSlide = true;
+shouldSlide = tru;
 $(window).on('scroll', function(){
     scrollTop = $('body').scrollTop();
     scrollingUp = scrollTop < lastScroll;
