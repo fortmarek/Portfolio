@@ -10,8 +10,13 @@ $(document).ready(function(){
 });
 
 lastScroll = 0;
+<<<<<<< HEAD
 shouldAnimate = true;
 9
+=======
+shouldAnimat = true;
+10
+>>>>>>> feature
 lastColor = "#3C9BFF";
 shouldSlide = true;
 $(window).on('scroll', function(){
