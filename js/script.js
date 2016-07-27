@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 lastScroll = 0;
-shouldAnimate = true;
+shouldAnimat = true;
 lastColor = "#3C9BFF";
 shouldSlide = true;
 $(window).on('scroll', function(){
@@ -19,6 +19,8 @@ $(window).on('scroll', function(){
     lastScroll = scrollTop;
     heightOfTransition = $('.section-supl').height();
 
+
+    
     /*
      suplTop = (scrollTop - $('.section-supl').offset().top) / 14;
      $('.section-supl img').css('top', (suplTop));
