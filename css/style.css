@@ -337,7 +337,8 @@ header::before {
 
 .slide {
     height: 100vh;
-    animation-duration: 20s;
+    animation-delay: 20s;
+    -webkit-animation-duration: 3s;
     opacity: 0;
 }
 
