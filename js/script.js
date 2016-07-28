@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 });
 
-
+translateValue = 0;
 lastScroll = 0;
 shouldAnimate = true;
 lastColor = "#3C9BFF";
@@ -19,14 +19,21 @@ $(window).on('scroll', function(){
     scrollingUp = scrollTop < lastScroll;
     lastScroll = scrollTop;
     heightOfTransition = $('.section-supl').height();
-
-
-    suplTop = (scrollTop - $('.section-supl').offset().top) / 14;
-    $('.section-supl img').css('top', (suplTop));
+    
+    $('.section-supl img').css('transform', ("translate(0, " + translateValue + "px)"));
+    translateValue++;
     swipeTop = (scrollTop - $('.section-swipe').offset().top) / 14;
     $('.section-swipe img').css('top', (swipeTop));
 
 
+    /*
+    $('.section-supl .screenshot').waypoint(function() {
+        $('.section-supl .screenshot').addClass('animated fadeInUp');
+        console.log("ANIMATEEE")
+    }, {
+        offset: '120%'
+    });
+    */
 
 
     if  ($('.section-supl').offset().top + heightOfTransition - heightOfTransition / 3 - scrollTop < 0 && lastColor != "#FF3D97" && scrollingUp == false && shouldAnimate ) {
@@ -50,9 +57,12 @@ $(window).on('scroll', function(){
         },1500);
     }
 
-    if (scrollTop >= $('.section-me').offset().top - $('.section-me').height()) {
-        $('.slide').addClass('animated fadeInUp');
-    }
+    $('.section-me').waypoint(function() {
+        $('.slide').addClass('animated zoomIn');
+    }, {
+        offset: '10%'
+    });
+
 
 });
 
