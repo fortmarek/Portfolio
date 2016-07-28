@@ -336,9 +336,8 @@ header::before {
 /* SLIDE */
 
 .slide {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    background-color: #515151;
+    height: 100vh;
+    animation-duration: 20s;
     opacity: 0;
 }
 

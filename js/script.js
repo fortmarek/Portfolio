@@ -8,15 +8,12 @@ $(document).ready(function(){
     $('.section-swipe .summary').css('margin-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
     $('.section-supl .summary').css('margin-top', ($('.section-supl img').height() / 2 - $('.section-supl .summary').height() / 2 ));
 
-    // Backstretch
-    // $('header').backstretch("/marekfort/img/background.jpg");
 });
 
 
 lastScroll = 0;
 shouldAnimate = true;
 lastColor = "#3C9BFF";
-shouldSlide = true;
 $(window).on('scroll', function(){
     scrollTop = $('body').scrollTop();
     scrollingUp = scrollTop < lastScroll;
@@ -53,9 +50,8 @@ $(window).on('scroll', function(){
         },1500);
     }
 
-    if (scrollTop >= $('.section-me').offset().top - $('.section-me').height() && shouldSlide) {
+    if (scrollTop >= $('.section-me').offset().top - $('.section-me').height()) {
         $('.slide').addClass('animated fadeInUp');
-        shouldSlide = false;
     }
 
 });
