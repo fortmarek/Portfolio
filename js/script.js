@@ -5,8 +5,10 @@
 
 $(document).ready(function(){
     // Setting summary to be centered to the iphone mockup
-    $('.section-swipe .summary').css('padding-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
-    $('.section-supl .summary').css('margin-top', ($('.section-supl img').height() / 2 - $('.section-supl .summary').height() / 2 ));
+    swipeSummary = $('.section-swipe .summary');
+    swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 ));
+    suplSummary = $('.section-supl .summary');
+    suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2 ));
 
 });
 
@@ -15,28 +17,19 @@ lastScroll = 0;
 shouldAnimate = true;
 lastColor = "#3C9BFF";
 $(window).on('scroll', function(){
+    sectionSupl = $('.section-supl');
+
     scrollTop = $('body').scrollTop();
     scrollingUp = scrollTop < lastScroll;
     lastScroll = scrollTop;
-    heightOfTransition = $('.section-supl').height();
+    heightOfTransition = sectionSupl.height();
 
     $('.section-supl img').css('transform', ("translate(0, " + translateValue + "px)"));
     translateValue++;
-    swipeTop = (scrollTop - $('.section-swipe').offset().top) / 14;
+    $('.section-swipe img').css('transform', ("translate(0, " + translateValue + "px)"));
     //$('.section-swipe img').css('top', (swipeTop));
 
-
-    /*
-    $('.section-supl img').waypoint(function() {
-        $('.section-supl img').addClass('animated fadeInUp');
-        console.log("ANIMATEEE")
-    }, {
-        offset: '120%'
-    });
-    */
-
-
-    if  ($('.section-supl').offset().top + heightOfTransition - heightOfTransition / 3 - scrollTop < 0 && lastColor != "#FF3D97" && scrollingUp == false && shouldAnimate ) {
+    if  (sectionSupl.offset().top + heightOfTransition - heightOfTransition / 3 - scrollTop < 0 && lastColor != "#FF3D97" && scrollingUp == false && shouldAnimate ) {
         lastColor = "#FF3D97";
         shouldAnimate = false;
         jQuery(".content").animate({
@@ -46,7 +39,7 @@ $(window).on('scroll', function(){
             shouldAnimate = true
         },1500);
     }
-    else if ($('.section-supl').offset().top + heightOfTransition + heightOfTransition / 3 - scrollTop > 0 && lastColor != "#3C9BFF" && scrollingUp && shouldAnimate) {
+    else if (sectionSupl.offset().top + heightOfTransition + heightOfTransition / 3 - scrollTop > 0 && lastColor != "#3C9BFF" && scrollingUp && shouldAnimate) {
         lastColor = "#3C9BFF";
         shouldAnimate = false;
         jQuery(".content").animate({
