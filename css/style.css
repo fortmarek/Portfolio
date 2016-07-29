@@ -63,6 +63,7 @@ h3 {
     color: white;
     font-weight: 300;
     font-size: 250%;
+    padding-bottom: 50px;
 }
 
 h3:after {
@@ -72,7 +73,6 @@ h3:after {
     content: " ";
     width: 200px;
     margin: 15px auto;
-    margin-bottom: 50px;
 }
 
 h4 {
@@ -206,10 +206,10 @@ header::before {
 /* SCREENSHOT */
 
 .content img {
-    /* animation */
-    /*opacity: 0;*/
-    /*animation-duration: 2s;*/
     position: relative;
+    /*px from bottom of portfolio title*/
+    transform: translate(0, -50px);
+    transition: 100ms;
 }
 
 .section-supl img {
