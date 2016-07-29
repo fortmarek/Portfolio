@@ -33,9 +33,7 @@ $(window).on('scroll', function(){
         if (sectionSupl.offset().top + heightOfTransition + heightOfTransition / 3 - scrollTop > 0 && lastColor != color && shouldAnimate) {
             changeColor(color);
         }
-        if (shouldMove) {
-            translateValue -= (lastScroll - scrollTop) / pixelsForScroll;
-        }
+        translateValue -= (lastScroll - scrollTop) / pixelsForScroll;
     }
 
     if (scrollingUp == false) {
@@ -44,18 +42,20 @@ $(window).on('scroll', function(){
             changeColor(color);
         }
 
-        if (shouldMove) {
-            translateValue += (scrollTop - lastScroll) / pixelsForScroll;
-        }
+        translateValue += (scrollTop - lastScroll) / pixelsForScroll;
 
 
     }
+
+
+    if (shouldMove) {
+        $('.content img').css('transform', ("translate(0, " + translateValue + "px)"),
+            setTimeout(function(){
+                shouldMove = true
+            },100));
+    }
     shouldMove = false;
 
-    $('.content img').css('transform', ("translate(0, " + translateValue + "px)"));
-        /*setTimeout(function(){
-        shouldMove = true
-    },100));*/
 
 
     $('.section-me').waypoint(function() {
