@@ -186,12 +186,14 @@ header::before {
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    min-height: 100vh;
 }
 
 .section-swipe {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     position: relative;
+    min-height: 100vh;
 }
 
 .section-profile {
@@ -258,7 +260,7 @@ header::before {
     margin-bottom: 40px;
     color: white;
     line-height: 150%;
-    font-weight: 200;
+    font-weight: 300;
     text-align: justify;
 }
 
@@ -339,14 +341,13 @@ header::before {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 100px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
-.section-me p {
+footer p {
     width: 60%;
     margin-left: 20%;
     text-align: center;
-    font-weight: 200;
 }
 
 /* SLIDE */
