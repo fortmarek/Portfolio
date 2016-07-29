@@ -5,7 +5,7 @@
 
 $(document).ready(function(){
     // Setting summary to be centered to the iphone mockup
-    $('.section-swipe .summary').css('margin-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
+    $('.section-swipe .summary').css('padding-top', ($('.section-swipe img').height() / 2 - $('.section-swipe .summary').height() / 2 ));
     $('.section-supl .summary').css('margin-top', ($('.section-supl img').height() / 2 - $('.section-supl .summary').height() / 2 ));
 
 });
@@ -19,16 +19,16 @@ $(window).on('scroll', function(){
     scrollingUp = scrollTop < lastScroll;
     lastScroll = scrollTop;
     heightOfTransition = $('.section-supl').height();
-    
+
     $('.section-supl img').css('transform', ("translate(0, " + translateValue + "px)"));
     translateValue++;
     swipeTop = (scrollTop - $('.section-swipe').offset().top) / 14;
-    $('.section-swipe img').css('top', (swipeTop));
+    //$('.section-swipe img').css('top', (swipeTop));
 
 
     /*
-    $('.section-supl .screenshot').waypoint(function() {
-        $('.section-supl .screenshot').addClass('animated fadeInUp');
+    $('.section-supl img').waypoint(function() {
+        $('.section-supl img').addClass('animated fadeInUp');
         console.log("ANIMATEEE")
     }, {
         offset: '120%'
