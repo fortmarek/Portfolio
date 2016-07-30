@@ -53,7 +53,7 @@ $(window).on('scroll', function(){
 
     //Section me animation
     if ($('.section-swipe').offset().top < scrollTop) {
-        $('.slide').addClass('animated zoomIn');
+        $('.slide').addClass('animated fadeIn');
     }
 
     lastScroll = scrollTop;
@@ -87,12 +87,11 @@ function changeColor(color) {
 }
 
 function setLayout() {
-    console.log("HEY");
     // Eg for 3px of body scroll, the screenshot should move only by 1px
     headerHeight = $('header').height();
     pixelsToScroll = parseFloat($('h3').css('padding-bottom'));
     pixelsForScroll = headerHeight / pixelsToScroll;
-    console.log(pixelsToScroll);
+
     // Setting summary to be centered to the iphone mockup
     swipeSummary = $('.section-swipe .summary');
     // 100 is for padding-botttom and top of section-swipe and section-supl

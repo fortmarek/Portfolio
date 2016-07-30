@@ -1,9 +1,52 @@
 
 
 /* Small phones to small tablets : 481-767px */
-/*
-@media screen and(max-width: 767px) {
-    h3 {
-        font-size: 100%;
+
+@media only screen and (max-width: 767px) {
+
+    * {
+        font-size: 17px;
     }
-}*/
+
+    .section-me {
+        min-height: inherit;
+    }
+
+    .summary p {
+        text-align: start;
+    }
+
+    .app-btn {
+        font-size: 90%;
+    }
+
+    .app-btn:before {
+        width: 0;
+        margin-right: 0;
+    }
+
+    .app-btn:hover:before {
+        width: 0;
+    }
+
+    .app-btn i {
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+    h3 {
+        padding-bottom: 100px;
+    }
+
+    .section-supl img {
+        width: 35%;
+        margin-right: 7.5%;
+    }
+
+    .section-swipe img {
+        margin-left: 10%;
+        width: 30%;
+    }
+
+
+}
