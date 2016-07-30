@@ -52,11 +52,9 @@ $(window).on('scroll', function(){
 
 
     //Section me animation
-    $('.section-me').waypoint(function() {
+    if ($('.section-swipe').offset().top < scrollTop) {
         $('.slide').addClass('animated zoomIn');
-    }, {
-        offset: '10%'
-    });
+    }
 
     lastScroll = scrollTop;
 
@@ -100,5 +98,5 @@ function setLayout() {
     // 100 is for padding-botttom and top of section-swipe and section-supl
     swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 100) / pixelsForScroll)));
     suplSummary = $('.section-supl .summary');
-    suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2 ));
+    suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
 }
