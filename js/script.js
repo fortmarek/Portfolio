@@ -41,7 +41,7 @@ $(window).on('scroll', function(){
         translateValue += (scrollTop - lastScroll) / pixelsForScroll;
     }
 
-    //Screenshot parallax movement
+    /*Screenshot parallax movement*/
     if (shouldMove) {
         $('.content img').css('transform', ("translate(0, " + translateValue + "px)"),
             setTimeout(function(){
@@ -51,7 +51,7 @@ $(window).on('scroll', function(){
     shouldMove = false;
 
 
-    //Section me animation
+    /*Section me animation*/
     if ($('.section-swipe').offset().top < scrollTop) {
         $('.slide').addClass('animated fadeIn');
     }
@@ -61,7 +61,7 @@ $(window).on('scroll', function(){
 
 });
 
-// Navigation elements
+/* Navigation elements*/
 $('.portfolio-link').click(function() {
     body = $('body');
     scrollTop = body.scrollTop();
@@ -87,15 +87,15 @@ function changeColor(color) {
 }
 
 function setLayout() {
-    // Eg for 3px of body scroll, the screenshot should move only by 1px
+    /* Eg for 3px of body scroll, the screenshot should move only by 1px*/
     headerHeight = $('header').height();
     pixelsToScroll = parseFloat($('h3').css('padding-bottom'));
     translateValue = -pixelsToScroll;
     pixelsForScroll = headerHeight / pixelsToScroll;
 
-    // Setting summary to be centered to the iphone mockup
+    /*Setting summary to be centered to the iphone mockup*/
     swipeSummary = $('.section-swipe .summary');
-    // 100 is for padding-botttom and top of section-swipe and section-supl
+    /* 100 is for padding-botttom and top of section-swipe and section-supl*/
     swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 150) / pixelsForScroll)));
     suplSummary = $('.section-supl .summary');
     suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
