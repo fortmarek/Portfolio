@@ -13,7 +13,7 @@ $(window).resize(function() {
 lastScroll = 0;
 lastColor = "#3C9BFF";
 pixelsForScroll = 0;
-translateValue = -50;
+translateValue = 0;
 shouldMove = true;
 
 $(window).on('scroll', function(){
@@ -90,12 +90,13 @@ function setLayout() {
     // Eg for 3px of body scroll, the screenshot should move only by 1px
     headerHeight = $('header').height();
     pixelsToScroll = parseFloat($('h3').css('padding-bottom'));
+    translateValue = -pixelsToScroll;
     pixelsForScroll = headerHeight / pixelsToScroll;
 
     // Setting summary to be centered to the iphone mockup
     swipeSummary = $('.section-swipe .summary');
     // 100 is for padding-botttom and top of section-swipe and section-supl
-    swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 100) / pixelsForScroll)));
+    swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 150) / pixelsForScroll)));
     suplSummary = $('.section-supl .summary');
     suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
 }

@@ -185,7 +185,7 @@ body::before {
 
 .section-supl {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -340,7 +340,8 @@ body::before {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 100px;
-    font-weight: 300;
+    font-weight: 200;
+    line-height: 150%;
 }
 
 footer p {
@@ -389,7 +390,7 @@ footer a {
     color: #282828;
 }
 
-#margin /**/{
+#margin {
     width: 100%;
     /*Only when screen x px*/
     height: 20px;
