@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-size: 20px;
     color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
 }
 
 

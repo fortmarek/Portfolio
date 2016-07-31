@@ -10,54 +10,56 @@ $(window).resize(function() {
     setLayout();
 });
 
+isMobile = false;
 lastScroll = 0;
 lastColor = "#3C9BFF";
 pixelsForScroll = 0;
 translateValue = 0;
 shouldMove = true;
 
-$(window).on('scroll', function(){
-
-    sectionSupl = $('.section-supl');
+$(window).on('scroll', function() {
 
     scrollTop = $('body').scrollTop();
-    scrollingUp = scrollTop < lastScroll;
-    heightOfTransition = sectionSupl.height();
-    customWaypoint = sectionSupl.offset().top + heightOfTransition - heightOfTransition / 3 - scrollTop;
 
-    if (scrollingUp) {
-        color = "#3C9BFF";
-        if (customWaypoint > 0 && lastColor != color) {
-            changeColor(color);
+    if (isMobile == false) {
+        sectionSupl = $('.section-supl');
+
+        scrollingUp = scrollTop < lastScroll;
+        heightOfTransition = sectionSupl.height();
+        customWaypoint = sectionSupl.offset().top + heightOfTransition - heightOfTransition / 3 - scrollTop;
+
+        if (scrollingUp) {
+            color = "#3C9BFF";
+            if (customWaypoint > 0 && lastColor != color) {
+                changeColor(color);
+            }
+            translateValue -= (lastScroll - scrollTop) / pixelsForScroll;
         }
-        translateValue -= (lastScroll - scrollTop) / pixelsForScroll;
-    }
 
-    if (scrollingUp == false) {
-        color = "#FF3D97";
-        if  ( customWaypoint < 0 && lastColor != color) {
-            changeColor(color);
+        if (scrollingUp == false) {
+            color = "#FF3D97";
+            if  ( customWaypoint < 0 && lastColor != color) {
+                changeColor(color);
+            }
+            translateValue += (scrollTop - lastScroll) / pixelsForScroll;
         }
-        translateValue += (scrollTop - lastScroll) / pixelsForScroll;
-    }
 
-    /*Screenshot parallax movement*/
-    if (shouldMove) {
-        $('.content img').css('transform', ("translate(0, " + translateValue + "px)"),
-            setTimeout(function(){
-                shouldMove = true
-            },100));
-    }
-    shouldMove = false;
+        /*Screenshot parallax movement*/
+        if (shouldMove) {
+            $('.content img').css('transform', ("translate(0, " + translateValue + "px)"),
+                setTimeout(function(){
+                    shouldMove = true
+                },100));
+        }
+        shouldMove = false;
 
+        lastScroll = scrollTop;
+    }
 
     /*Section me animation*/
     if ($('.section-swipe').offset().top < scrollTop) {
         $('.slide').addClass('animated fadeIn');
     }
-
-    lastScroll = scrollTop;
-
 
 });
 
@@ -87,6 +89,10 @@ function changeColor(color) {
 }
 
 function setLayout() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        isMobile = true;
+    }
+
     /* Eg for 3px of body scroll, the screenshot should move only by 1px*/
     headerHeight = $('header').height();
     pixelsToScroll = parseFloat($('h3').css('padding-bottom'));
