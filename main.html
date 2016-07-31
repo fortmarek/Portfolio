@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/queries.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/queries-min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+
+    <!--Accessing static files for css-->
+    <style>
+        @font-face {
+            src: url("{{ url_for('static', filename='fonts/Montserrat-Hairline.otf') }}") format('otf');
+        }
+
+        body::before {
+            content: ' ';
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url("{{ url_for('static', filename='img/background-min.jpg') }}");
+            background-size: cover;
+            -webkit-transform: translateZ(0);
+        }
+    </style>
 
     <title>Marek Fořt</title>
 </head>
@@ -16,11 +39,11 @@
 <header>
     <nav>
         <div class="main-nav">
-        <p>Marek Fořt</p>
-        <ul>
-            <li><a href="#" class="portfolio-link">Portfolio</a></li>
-            <li><a href="#" id="about-link">O mně</a></li>
-        </ul>
+            <p>Marek Fořt</p>
+            <ul>
+                <li><a href="#" class="portfolio-link">Portfolio</a></li>
+                <li><a href="#" id="about-link">O mně</a></li>
+            </ul>
         </div>
     </nav>
     <div class="description">
@@ -35,7 +58,8 @@
 <div class="content">
     <div class="section-supl clearfix">
         <h3 id="portfolio">PORTFOLIO</h3>
-        <img src="img/supl-min.png" id="supl-screen">
+        <!--<img src="img/supl-min.png" id="supl-screen">-->
+        <img src="{{ url_for('static', filename='img/supl-min.png') }}" id="supl-screen">
         <div class="summary" id="supl-summary">
             <h4>Supl</h4>
             <p>Supl is an iOS app for many Czech students. It uses Bakalari system to
@@ -47,7 +71,8 @@
     </div>
 
     <div class="section-swipe clearfix">
-        <img src="img/Left-min.png" id="perspective-screen">
+        <!--<img src="img/Left-min.png" id="perspective-screen">-->
+        <img src="{{ url_for('static', filename='img/Left-min.png') }}" id="perspective-screen">
         <div class="summary" id="swipe-summary">
             <h4>Supl</h4>
             <p>Supl is an iOS app for many Czech students. It uses Bakalari system to
@@ -62,7 +87,8 @@
 <div class="section-me clearfix">
     <div class="slide">
         <h3>O MNĚ</h3>
-        <img src="img/profile-min.jpg">
+        <!--<img src="img/profile-min.jpg">-->
+        <img src="{{ url_for('static', filename='img/profile-min.jpg') }}">
         <p id="section-me-p">Supl is an iOS app for many Czech students. It uses Bakalari system to
             and it not only enables the user to see any changes in his school schedule but the app
             automatically notifies him.</p>
@@ -83,8 +109,10 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/jquery.color.min.js"></script>
+<!--<script src="js/script.js"></script>
+<script src="js/jquery.color.min.js"></script>-->
+<script src="{{ url_for('static', filename='js/script-min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.color.min.js') }}"></script>
 
 
 </body>
