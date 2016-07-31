@@ -1,6 +1,6 @@
 
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     h1 {
         line-height: 130%;
         padding-bottom: 50px;
@@ -11,7 +11,7 @@
 
 /* Small phones to small tablets : 481-767px */
 
-@media only screen and (max-width: 767px) and (max-device-width: 767px) {
+@media screen and (max-width: 767px) and (max-device-width: 767px) {
 
     * {
         font-size: 17px;
@@ -67,8 +67,3 @@
     }
 }
 
-@media only screen and (min-device-width: 0) {
-    .content {
-        background-color: #EDB500;
-    }
-}
