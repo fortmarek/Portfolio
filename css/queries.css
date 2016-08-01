@@ -65,5 +65,9 @@
     #margin {
         height: 50px;
     }
+
+    body::before {
+        background-size: 100vh;
+    }
 }
 

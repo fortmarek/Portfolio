@@ -3,16 +3,11 @@
  */
 
 $(document).ready(function(){
+    console.log($(window).width());
     setLayout();
 });
 
 $(window).resize(function() {
-    if (window.matchMedia('(max-device-width: 400px)').matches) {
-        console.log("MATCH");
-    }
-    else {
-        console.log("NO MATCH");
-    }
     if (isMobile == false) {
         setLayout();
     }
