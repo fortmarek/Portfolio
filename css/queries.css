@@ -5,6 +5,11 @@
         line-height: 130%;
         padding-bottom: 50px;
     }
+
+
+
+
+
 }
 
 
@@ -17,8 +22,50 @@
         font-size: 17px;
     }
 
+    h1 {
+        font-size: 280%;
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 180%;
+        padding-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 130%;
+        margin-bottom: 30px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .section-supl {
+        padding-top: 30px;
+    }
+
+    .section-swipe {
+        padding-bottom: 50px;
+    }
+
     .section-me {
+        padding-top: 30px;
+        padding-bottom: 30px;
         min-height: inherit;
+    }
+
+    .section-me img {
+        width: 70px;
+    }
+
+    .section-me h3 {
+        padding-bottom: 15px;
+    }
+
+    #section-me-p {
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 
     .summary p {
@@ -43,18 +90,15 @@
         padding-left: 15px;
     }
 
-    h3 {
-        padding-bottom: 80px;
-    }
 
     .section-supl img {
-        width: 35%;
-        margin-right: 7.5%;
+        width: 25%;
+        margin-right: 12.5%;
     }
 
     .section-swipe img {
-        margin-left: 10%;
-        width: 30%;
+        margin-left: 15%;
+        width: 20%;
     }
 
     #section-me-p {
@@ -62,12 +106,17 @@
         padding-bottom: 50px;
     }
 
-    #margin {
-        height: 50px;
+    .social-links-big {
+        display: none;
     }
 
-    body::before {
-        background-size: 100vh;
+    .social-links-small {
+        display: block;
     }
+
+    footer a {
+        margin-left: 40px;
+    }
+
 }
 

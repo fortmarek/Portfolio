@@ -304,10 +304,11 @@ header {
     width: 100%;
     background-color: #515151;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .section-me h3 {
-    padding-top: 50px;
     padding-bottom: 30px;
 }
 .section-me img {
@@ -315,7 +316,6 @@ header {
     width: 114px;
     border-radius: 50%;
     margin: auto;
-
 }
 
 #section-me-p {
@@ -353,32 +353,34 @@ footer a {
     margin-left: 80px;
 }
 
+.social-links-small {
+    display: none;
+}
 
-#twitter i, #mail i, #github i {
+.social-links-big {
+    display: block;
+}
+
+
+.twitter i, .mail i, .github i {
     transition: color 0.5s;
 }
 
-#twitter {
+.twitter {
     margin-left: 0;
 }
 
-#twitter i:hover {
+.twitter i:hover {
     color: #0096ED;
 }
 
-#mail i:hover {
+.mail i:hover {
     color: #EDB500;
 }
 
-#github i:hover {
+.github i:hover {
     color: #282828;
 }
 
-#margin {
-    width: 100%;
-    /*Only when screen x px*/
-    height: 20px;
-    background-color: #515151;
-    position: absolute;
-}
+
 
