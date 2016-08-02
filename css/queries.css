@@ -15,21 +15,32 @@
         display: block;
     }
 
-    .summary {
+    .section-supl .summary {
         display: block;
         width: 80%;
         margin-left: 10%;
     }
 
-    .section-supl .summary h4, .section-supl .summary p, .section-swipe .summary p, .section-swipe .summary h4, .section-supl .summary h4 {
+    .section-swipe .summary {
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .section-supl .summary h4, .section-swipe .summary h4, .section-supl .summary h4 {
         text-align: center;
         margin-left: 0;
         margin-right: 0;
     }
 
-    .summary p {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .section-supl .summary p, .section-swipe .summary p  {
+        margin: 30px 0;
+        text-align: justify;
+    }
+
+    .section-swipe .summary p, .section-swipe .app-btn {
+        width: 90%;
+        margin-left: 5%;
     }
 
     .section-supl img {
@@ -52,10 +63,6 @@
         margin-left: 0;
     }
 
-    .section-swipe .app-btn {
-        margin-right: 0;
-    }
-
     .section-swipe .summary {
         float: left;
     }
@@ -66,6 +73,7 @@
         font-size: 16px;
         padding-top: 30px;
         padding-bottom: 40px;
+        text-align: justify;
     }
 
 
