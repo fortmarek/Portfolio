@@ -97,11 +97,14 @@ function setLayout() {
         $('.section-swipe').css('background-color', ('#FF3D97'));
         $('.content img').css('transform', ('translate(0, 0)'));
 
-        /*Setting summary to be centered to the iphone mockup*/
-        swipeSummary = $('.section-swipe .summary');
-        swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2));
-        suplSummary = $('.section-supl .summary');
-        suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
+        if ($(window).width() > 480) {
+            /*Setting summary to be centered to the iphone mockup*/
+            swipeSummary = $('.section-swipe .summary');
+            swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2));
+            suplSummary = $('.section-supl .summary');
+            suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
+        }
+
     }
 
     else {
