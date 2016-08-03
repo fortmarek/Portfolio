@@ -358,10 +358,17 @@ footer a {
     display: none;
 }
 
+.social-links-small i {
+    width: 24px;
+}
+
 .social-links-big {
     display: block;
 }
 
+.social-links-big i {
+    width: 41px;
+}
 
 .twitter i, .mail i, .github i {
     transition: color 0.5s;
