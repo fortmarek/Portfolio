@@ -3,7 +3,6 @@
  */
 
 $(document).ready(function(){
-    console.log($(window).width());
     setLayout();
 });
 
@@ -21,7 +20,6 @@ translateValue = 0;
 shouldMove = true;
 
 $(window).on('scroll', function() {
-
     scrollTop = $('body').scrollTop();
 
     if (isMobile == false) {
@@ -114,12 +112,17 @@ function setLayout() {
         translateValue = -pixelsToScroll;
         pixelsForScroll = headerHeight / pixelsToScroll;
 
+        $('.section-supl img').css('height', ($('.section-supl img').width() * 2.063888889));
         /*Setting summary to be centered to the iphone mockup*/
+        suplSummary = $('.section-supl .summary');
+        suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
+
+        $('.section-swipe img').css('height', ($('.section-swipe img').width() * 2.850694444));
         swipeSummary = $('.section-swipe .summary');
         /* 100 is for padding-botttom and top of section-swipe and section-supl*/
         swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 150) / pixelsForScroll)));
-        suplSummary = $('.section-supl .summary');
-        suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
+
+        $('.content img').css('transform', ("translate(0, " + translateValue + "px)"));
     }
 
 
