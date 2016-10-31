@@ -166,6 +166,10 @@ header {
 .content {
     background-color: #3C9BFF;
     position: relative;
+    perspective: 1px;
+    height: 200vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .section-supl {
@@ -191,7 +195,8 @@ header {
 .content img {
     position: relative;
     /*px from bottom of portfolio title*/
-    transform: translate(0, -50px);
+    /*transform: translate(0, -50px);*/
+    transform: translateZ(-1px);
     transition: 100ms;
 }
 

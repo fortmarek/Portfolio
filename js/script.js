@@ -121,7 +121,7 @@ function setLayout() {
         swipeSummary = $('.section-swipe .summary');
         /* 100 is for padding-botttom and top of section-swipe and section-supl*/
         swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 150) / pixelsForScroll)));
-
+        console.log(translateValue);
         $('.content img').css('transform', ("translate(0, " + translateValue + "px)"));
     }
 

@@ -10,15 +10,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/queries.css">
     <link rel="stylesheet" href="css/animate.min.css">-->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/queries.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 
     <!--Accessing static files for css-->
     <style>
         @font-face {
-            src: url("{{ url_for('static', filename='fonts/Montserrat-Hairline.otf') }}") format('otf');
+            src: url("fonts/Montserrat-Hairline.otf") format('otf');
         }
 
         body::before {
@@ -28,7 +28,7 @@
             height: 100vh;
             top: 0;
             left: 0;
-            background: url("{{ url_for('static', filename='img/background-min.jpg') }}");
+            background: url("img/background-min.jpg");
             background-size: cover;
             -webkit-transform: translateZ(0);
         }
@@ -71,7 +71,7 @@
                 automatically notifies him.</p>-->
             <a href="https://itunes.apple.com/cz/app/supl/id1040536837?mt=8" class="app-btn" target="_blank">Stáhnout v App Store<i class="fa fa-apple"></i></a>
         </div>
-        <img src="{{ url_for('static', filename='img/supl-min.png') }}" id="supl-screen">
+        <img src="img/supl-min.png" id="supl-screen">
     </div>
 
     <div class="section-swipe clearfix">
@@ -82,7 +82,7 @@
             </p>
             <a href="https://github.com/fortmarek/SwipeViewController" class="app-btn" target="_blank">Přístupné na Github<i class="fa fa-github"></i></a>
         </div>
-        <img src="{{ url_for('static', filename='img/Left-min.png') }}" id="perspective-screen">
+        <img src="img/Left-min.png" id="perspective-screen">
     </div>
 </div>
 
@@ -90,7 +90,7 @@
     <div class="slide">
         <h3>O MNĚ</h3>
         <!--<img src="img/profile-min.jpg">-->
-        <img src="{{ url_for('static', filename='img/profile-min.jpg') }}">
+        <img src="img/profile-min.jpg">
         <p id="section-me-p">Je mi 17 let a momentálně chodím na Gymnázium Jana Keplera. O technologie se zajímám od mládí, především o Apple. To mě také vedlo k tomu se naučit programovat. Nejraději programuji ve Swiftu, umím ale také Python a Javascript. Zkušeností zatím bohužel moc nemám, ale to se snažím dohánět pracovitostí a nadšením.</p>
         <footer>
             <h5>Kontaktujte mě</h5>
@@ -111,10 +111,8 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<!--<script src="js/script.js"></script>
-<script src="js/jquery.color.min.js"></script>-->
-<!--<script src="{{ url_for('static', filename='js/script.min.js') }}"></script>-->
-<script src="{{ url_for('static', filename='js/jquery.color.min.js') }}"></script>
+<!--<script src="js/script.js"></script>-->
+<script src="js/jquery.color.min.js"></script>
 
 
 </body>
