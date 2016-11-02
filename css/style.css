@@ -165,9 +165,9 @@ header {
 
 .content {
     background-color: #3C9BFF;
-    position: relative;
+
     perspective: 1px;
-    height: 200vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -176,6 +176,20 @@ header {
     padding-top: 50px;
     padding-bottom: 100px;
     position: relative;
+
+}
+
+.parallax_layer {
+    position: absolute;
+
+}
+
+.parallax_base {
+    transform: translateZ(0);
+}
+
+.parallax_back {
+    transform: translateZ(-1px) scale(2);
 }
 
 .section-swipe {
@@ -196,7 +210,6 @@ header {
     position: relative;
     /*px from bottom of portfolio title*/
     /*transform: translate(0, -50px);*/
-    transform: translateZ(-1px);
     transition: 100ms;
 }
 
