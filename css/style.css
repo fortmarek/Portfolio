@@ -163,18 +163,30 @@ header {
 /* ------------------
 ----- PORTFOLIO ----- */
 
+.section-supl {
+
+}
+
+.summary {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .content {
     background-color: #3C9BFF;
     position: relative;
     perspective: 1px;
-    height: calc(100vh + 150px);
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 .section-supl {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    /*padding-top: 50px;
+    padding-bottom: 100px;*/
+    height: 100vh;
+    width: 50%;
 }
 
 .parallax_layer {
@@ -186,7 +198,7 @@ header {
 }
 
 .parallax_back {
-    transform: translateZ(-0.4px);
+    transform: translateZ(-0.5px) scale(1.5);
 }
 
 .section-swipe {
@@ -199,6 +211,21 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
     overflow: hidden;
+}
+
+.supl_layer {
+    
+    height: 100vh;
+    width: 50%;
+    right: 0;
+}
+
+.content img {
+    height: 100vh;
+    position: relative;
+    display: block;
+    margin: auto;
+    filter: none;
 }
 
 /* SCREENSHOT */
@@ -218,19 +245,7 @@ header {
     float: left;
 }
 
-.supl_layer {
-    margin-top: 150px;
-    width: 50%;
-    right: 0;
-}
 
-.content img {
-    height: 110vh;
-    position: relative;
-    display: block;
-    margin: auto;
-    filter: none;
-}
 
 .section-supl img {
     width: 25%;
@@ -245,7 +260,6 @@ header {
 
 .summary {
     padding-left: 1%;
-    width: 50%;
     display: inline-block;
 }
 
