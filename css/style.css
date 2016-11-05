@@ -60,6 +60,7 @@ h3 {
     font-weight: 300;
     font-size: 250%;
     padding-bottom: 50px;
+    padding-top: 25px;
 }
 
 h3:after {
@@ -201,7 +202,7 @@ header {
 }
 
 .parallax_back {
-    transform: translateZ(-0.5px) scale(1.5);
+    transform: translateZ(-0.1px) scale(1.1);
 }
 
 .section-swipe {
@@ -219,13 +220,13 @@ header {
 .supl_layer {
     float: right;
     position: relative;
-    height: 100vh;
+    height: 120vh;
     width: 50%;
     right: 0;
 }
 
 .content img {
-    height: 100vh;
+    height: 100%;
     position: relative;
     display: block;
     margin: auto;
