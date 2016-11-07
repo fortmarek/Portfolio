@@ -2,6 +2,100 @@
  * Created by marekfort on 13/04/16.
  */
 
+
+
+isMobile = false;
+lastScroll = 0;
+lastColor = "#3C9BFF";
+pixelsForScroll = 0;
+translateValue = 0;
+shouldMove = true;
+
+waypoint = $(window).height() * 2.2;
+
+
+
+$(document).ready(function(){
+    console.log("jhbjhb");
+    //setLayout();
+
+});
+
+inView('.section-me').on('enter', function(){
+    console.log("JJJ");
+    changeColor("#FF3D97");
+});
+
+$('body').scroll(function() {
+
+
+    /*scrollTop = $('body').scrollTop();
+
+    sectionSupl = $('#section-supl');
+
+    scrollingUp = scrollTop < lastScroll;
+    heightOfTransition = sectionSupl.height();
+    customWaypoint = sectionSupl.offset().top + heightOfTransition - heightOfTransition / 3 - scrollTop;
+
+    if (scrollingUp) {
+        color = "#3C9BFF";
+        if (waypoint > scrollTop && lastColor != color) {
+            changeColor(color);
+        }
+        translateValue -= (lastScroll - scrollTop) / pixelsForScroll;
+    }
+
+    if (scrollingUp == false) {
+        color = "#FF3D97";
+        if  ( customWaypoint < scrollTop && lastColor != color) {
+            changeColor(color);
+        }
+        translateValue += (scrollTop - lastScroll) / pixelsForScroll;
+    }
+
+    lastScroll = scrollTop;
+
+    /!*Section me animation*!/
+    if ($('#section-swipe').offset().top < scrollTop) {
+        $('.slide').addClass('animated fadeIn');
+    }*/
+});
+
+
+
+
+
+
+/* Navigation elements*/
+$('.portfolio-link').click(function() {
+    body = $('body');
+    scrollTop = body.scrollTop();
+    body.animate({scrollTop : $('.section-supl').offset().top}, 600);
+});
+
+$('#about-link').click(function() {
+    body = $('body');
+    scrollTop = body.scrollTop();
+    body.animate({scrollTop : $('.section-me').offset().top}, 600);
+});
+
+
+function changeColor(color) {
+    lastColor = color;
+    shouldAnimate = false;
+    jQuery(".content").animate({
+        backgroundColor: color
+    }, 1500 );
+    setTimeout(function(){
+        shouldAnimate = true
+    },1500);
+}
+
+/*
+/!**
+ * Created by marekfort on 13/04/16.
+ *!/
+
 $(document).ready(function(){
     //setLayout();
 });
@@ -45,7 +139,7 @@ $(window).on('scroll', function() {
             translateValue += (scrollTop - lastScroll) / pixelsForScroll;
         }
 
-        /*Screenshot parallax movement*/
+        /!*Screenshot parallax movement*!/
         if (shouldMove) {
             $('.content img').css('transform', ("translate(0, " + translateValue + "px)"),
                 setTimeout(function(){
@@ -57,14 +151,14 @@ $(window).on('scroll', function() {
         lastScroll = scrollTop;
     }
 
-    /*Section me animation*/
+    /!*Section me animation*!/
     if ($('.section-swipe').offset().top < scrollTop) {
         $('.slide').addClass('animated fadeIn');
     }
 
 });
 
-/* Navigation elements*/
+/!* Navigation elements*!/
 $('.portfolio-link').click(function() {
     body = $('body');
     scrollTop = body.scrollTop();
@@ -96,7 +190,7 @@ function setLayout() {
         $('.content img').css('transform', ('translate(0, 0)'));
 
         if ($(window).width() > 480) {
-            /*Setting summary to be centered to the iphone mockup*/
+            /!*Setting summary to be centered to the iphone mockup*!/
             swipeSummary = $('.section-swipe .summary');
             swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2));
             suplSummary = $('.section-supl .summary');
@@ -106,20 +200,20 @@ function setLayout() {
     }
 
     else {
-        /* Eg for 3px of body scroll, the screenshot should move only by 1px*/
+        /!* Eg for 3px of body scroll, the screenshot should move only by 1px*!/
         headerHeight = $('header').height();
         pixelsToScroll = parseFloat($('h3').css('padding-bottom'));
         translateValue = -pixelsToScroll;
         pixelsForScroll = headerHeight / pixelsToScroll;
 
         $('.section-supl img').css('height', ($('.section-supl img').width() * 2.063888889));
-        /*Setting summary to be centered to the iphone mockup*/
+        /!*Setting summary to be centered to the iphone mockup*!/
         suplSummary = $('.section-supl .summary');
         suplSummary.css('margin-top', ($('.section-supl img').height() / 2 - suplSummary.height() / 2));
 
         $('.section-swipe img').css('height', ($('.section-swipe img').width() * 2.850694444));
         swipeSummary = $('.section-swipe .summary');
-        /* 100 is for padding-botttom and top of section-swipe and section-supl*/
+        /!* 100 is for padding-botttom and top of section-swipe and section-supl*!/
         swipeSummary.css('padding-top', ($('.section-swipe img').height() / 2 - swipeSummary.height() / 2 + (($('.section-supl').height() + 150) / pixelsForScroll)));
         console.log(translateValue);
         $('.content img').css('transform', ("translate(0, " + translateValue + "px)"));
@@ -127,3 +221,4 @@ function setLayout() {
 
 
 }
+*/
