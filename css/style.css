@@ -165,11 +165,6 @@ header {
 ----- PORTFOLIO ----- */
 
 
-.summary {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
 .parallax {
     perspective: 1px;
     height: 100vh;
@@ -181,9 +176,10 @@ header {
 .content {
     background-color: #3C9BFF;
     overflow: visible;
+    padding-bottom: 100px;
 }
 
-.section-supl {
+.summary-container {
     height: 100%;
     width: 50%;
 }
@@ -209,7 +205,6 @@ header {
 .parallax-img-container {
     height: 100%;
     width: 50%;
-    right: 0;
 }
 
 .parallax-img {
@@ -220,11 +215,8 @@ header {
     filter: none;
 }
 
-.section-swipe {
-    display: inline-block;
-    height: 120vh;
-    width: 50%;
-    position: relative;
+#section-swipe {
+    right: 0;
 }
 
 .section-profile {
@@ -237,52 +229,34 @@ header {
 
 /* SCREENSHOT */
 
-.content img {
-    position: relative;
-    /*px from bottom of portfolio title*/
-    /*transform: translate(0, -50px);*/
-    transition: 100ms;
-}
-
-.section-supl img {
-    float: right;
-}
-
-.section-swipe img {
-    float: left;
-}
-
-
-
-.section-supl img {
-    width: 25%;
-}
-
-.section-swipe img {
-    width: 20%;
+#supl-img {
+    right: 0;
 }
 
 /* SUMMARY */
 
 .summary {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     padding-left: 1%;
     display: inline-block;
 }
 
-.section-supl .summary {
+#supl-summary {
     float: left;
 }
 
-.section-swipe .summary {
+#swipe-summary {
     float: right;
 }
 
-.section-supl .summary h4 {
+#supl-summary h4 {
     margin-left: 15%;
     text-align: left;
 }
 
-.section-swipe .summary h4 {
+#swipe-summary h4 {
     margin-right: 15%;
     text-align: left;
 }
@@ -296,21 +270,21 @@ header {
     text-align: start;
 }
 
-.section-supl .summary p {
+#supl-summary p {
     margin-left: 15%;
 }
-.section-swipe .summary p {
+#swipe-summary p {
     margin-right: 15%;
 }
 
 /* BUTTON */
 
-.section-supl .app-btn {
+#section-supl .app-btn {
     margin-left: 15%;
     text-decoration: none;
 }
 
-.section-swipe .app-btn {
+#section-swipe .app-btn {
     margin-right: 15%;
     text-decoration: none;
 }

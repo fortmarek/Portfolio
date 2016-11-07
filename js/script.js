@@ -3,12 +3,12 @@
  */
 
 $(document).ready(function(){
-    setLayout();
+    //setLayout();
 });
 
 $(window).resize(function() {
     if (isMobile == false) {
-        setLayout();
+        //setLayout();
     }
 });
 
