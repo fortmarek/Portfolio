@@ -93,7 +93,7 @@ h5 {
 
 header {
     height: 100vh;
-    position: relative;
+
 }
 
 .description {
@@ -164,9 +164,6 @@ header {
 /* ------------------
 ----- PORTFOLIO ----- */
 
-.section-supl {
-
-}
 
 .summary {
     position: relative;
@@ -177,37 +174,56 @@ header {
     perspective: 1px;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: visible;
+    transform-style: preserve-3d;
 }
+
 .content {
     background-color: #3C9BFF;
-    position: relative;
-    height: 100vh;
-
+    overflow: visible;
 }
 
 .section-supl {
-    /*padding-top: 50px;
-    padding-bottom: 100px;*/
-    height: 100vh;
+    height: 100%;
     width: 50%;
 }
 
-.parallax_layer {
+.parallax-layer {
     position: absolute;
 }
 
-.parallax_base {
+.parallax-base {
     transform: translateZ(0);
 }
 
-.parallax_back {
+.parallax-back {
     transform: translateZ(-0.1px) scale(1.1);
 }
 
+.parallax-group {
+    position: relative;
+    height: 120vh;
+    transform-style: preserve-3d;
+}
+
+.parallax-img-container {
+    height: 100%;
+    width: 50%;
+    right: 0;
+}
+
+.parallax-img {
+    height: 100%;
+    position: relative;
+    display: block;
+    margin: auto;
+    filter: none;
+}
+
 .section-swipe {
-    padding-top: 50px;
-    padding-bottom: 150px;
+    display: inline-block;
+    height: 120vh;
+    width: 50%;
     position: relative;
 }
 
@@ -217,21 +233,7 @@ header {
     overflow: hidden;
 }
 
-.supl_layer {
-    float: right;
-    position: relative;
-    height: 120vh;
-    width: 50%;
-    right: 0;
-}
 
-.content img {
-    height: 100%;
-    position: relative;
-    display: block;
-    margin: auto;
-    filter: none;
-}
 
 /* SCREENSHOT */
 
@@ -257,7 +259,6 @@ header {
 }
 
 .section-swipe img {
-    margin-left: 15%;
     width: 20%;
 }
 
