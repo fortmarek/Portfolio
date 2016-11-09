@@ -15,21 +15,17 @@ waypoint = $(window).height() * 2.2;
 
 
 
+
 $(document).ready(function(){
     console.log("jhbjhb");
     //setLayout();
-
 });
 
-inView('.section-me').on('enter', function(){
-    console.log("JJJ");
-    changeColor("#FF3D97");
-});
 
 $('body').scroll(function() {
 
 
-    /*scrollTop = $('body').scrollTop();
+    scrollTop = $('body').scrollTop();
 
     sectionSupl = $('#section-supl');
 
@@ -55,10 +51,10 @@ $('body').scroll(function() {
 
     lastScroll = scrollTop;
 
-    /!*Section me animation*!/
+    /*Section me animation*/
     if ($('#section-swipe').offset().top < scrollTop) {
         $('.slide').addClass('animated fadeIn');
-    }*/
+    }
 });
 
 
