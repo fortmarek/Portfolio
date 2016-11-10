@@ -49,10 +49,3 @@ $('#about-link').click(function() {
     scrollTop = body.scrollTop();
     body.animate({scrollTop : $('.section-me').offset().top}, 600);
 });
-
-
-function changeColor(color) {
-    lastColor = color;
-    shouldAnimate = false;
-    $('.content').css('background-color', ('#FF3D97'));
-}
