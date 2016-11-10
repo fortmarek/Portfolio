@@ -12,7 +12,7 @@ shouldMove = true;
 enterIndex = 0;
 exitIndex = 0;
 colors = ["#3C9BFF", "#FF3D97"];
-summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97"};
+summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-heading": "#FF7F00"};
 
 waypoint = $(window).height() * 2.2;
 
@@ -30,10 +30,6 @@ inView('.summary h4')
 
 inView('.section-me').once('enter', function() {
     $('.slide').addClass('animated fadeIn');
-});
-
-$(window).scroll(function() {
-    console.log("WINDOW SCROLL");
 });
 
 

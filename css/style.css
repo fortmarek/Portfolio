@@ -59,7 +59,6 @@ h3 {
     color: white;
     font-weight: 300;
     font-size: 250%;
-    padding-bottom: 50px;
     padding-top: 25px;
 }
 
@@ -164,7 +163,6 @@ header {
 /* ------------------
 ----- PORTFOLIO ----- */
 
-
 .parallax {
     perspective: 1px;
     height: 100vh;
@@ -198,9 +196,18 @@ header {
 }
 
 .parallax-group {
+    margin-bottom: 200px;
     position: relative;
     height: 120vh;
     transform-style: preserve-3d;
+}
+
+.parallax-group:first-of-type {
+    margin-top: 70px;
+}
+
+.parallax-group:last-of-type {
+    margin-bottom: 100px;
 }
 
 .parallax-img-container {
@@ -230,7 +237,7 @@ header {
 
 /* SCREENSHOT */
 
-#supl-img {
+#supl-img, #klozet-img {
     right: 0;
 }
 
@@ -244,7 +251,7 @@ header {
     display: inline-block;
 }
 
-#supl-summary {
+#supl-summary, #klozet-summary {
     float: left;
 }
 
@@ -252,7 +259,7 @@ header {
     float: right;
 }
 
-#supl-summary h4 {
+#supl-summary h4, #klozet-summary h4 {
     margin-left: 15%;
     text-align: left;
 }
@@ -271,7 +278,7 @@ header {
     text-align: start;
 }
 
-#supl-summary p {
+#supl-summary p, #klozet-summary p {
     margin-left: 15%;
 }
 #swipe-summary p {
@@ -280,7 +287,7 @@ header {
 
 /* BUTTON */
 
-#section-supl .app-btn {
+#section-supl .app-btn, #klozet-summary .app-btn {
     margin-left: 15%;
     text-decoration: none;
 }
