@@ -175,6 +175,7 @@ header {
 
 .content {
     background-color: #3C9BFF;
+    transition: background-color 1.5s ease;
     overflow: visible;
     padding-bottom: 100px;
 }
