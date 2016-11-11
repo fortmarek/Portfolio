@@ -17,7 +17,7 @@
             src: url("fonts/Montserrat-Hairline.otf") format('otf');
         }
 
-        body::before {
+        body::after {
             content: ' ';
             position: fixed;
             width: 100%;
@@ -26,7 +26,8 @@
             left: 0;
             background: url("img/background-min.jpg");
             background-size: cover;
-            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            z-index: -1;
         }
 
     </style>
@@ -84,7 +85,7 @@
 
     </div>
 
-    
+
     <div class="parallax-group">
 
         <div class="summary-container clearfix parallax-layer parallax-base" id="section-swipe">
