@@ -100,6 +100,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     padding-bottom: 10px;
     display: block;
 }
@@ -152,6 +153,7 @@ header {
     font-size: 0.8em;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -164,19 +166,49 @@ header {
 ----- PORTFOLIO ----- */
 
 .parallax {
+    -webkit-perspective: 1px;
     perspective: 1px;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: visible;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
 .content {
     background-color: #3C9BFF;
+    -webkit-transition: background-color 1.5s ease;
     transition: background-color 1.5s ease;
     overflow: visible;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
 }
+
+/*#background {
+    position: absolute;
+    height: calc(360vh + 600px);
+    width: 100%;
+    top: 100vh;
+    left: 0;
+    background-color: #3C9BFF;
+    transform: translateZ(-0.2px);
+}*/
+
+/*.content::after {
+    content: '';
+    !*transform-style: flat;*!
+    !*top: calc(50vh + 44px);*!
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-background-size: cover;
+    background: linear-gradient(#3C9BFF, #3C9BFF);
+    !*transform: translate3d(0, 0, -0.2px) scale3d(1.2, 1.2, 1.2);*!
+    z-index: -1;
+}*/
 
 .summary-container {
     height: 100%;
@@ -188,10 +220,12 @@ header {
 }
 
 .parallax-base {
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
 
 .parallax-back {
+    -webkit-transform: translateZ(-0.1px) scale(1.1);
     transform: translateZ(-0.1px) scale(1.1);
 }
 
@@ -199,7 +233,7 @@ header {
     margin-bottom: 200px;
     position: relative;
     height: 120vh;
-    transform-style: preserve-3d;
+    /*background-color: #3C9BFF;*/
 }
 
 .parallax-group:first-of-type {
@@ -220,7 +254,6 @@ header {
     position: relative;
     display: block;
     margin: auto;
-    filter: none;
 }
 
 #section-swipe {
@@ -247,6 +280,7 @@ header {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     padding-left: 1%;
     display: inline-block;
 }
@@ -307,6 +341,7 @@ header {
     height: 2px;
     width: 34px;
     background-color: #FFFFFF;
+    -webkit-transition: .2s;
     transition: .2s;
     content: " ";
     vertical-align: middle;
@@ -335,7 +370,11 @@ header {
     width: 100%;
     background-color: #515151;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -369,6 +408,7 @@ footer p {
 
 .slide {
     height: 100%;
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
     opacity: 0;
     overflow: hidden;
@@ -401,6 +441,7 @@ footer a {
 }
 
 .twitter i, .mail i, .github i {
+    -webkit-transition: color 0.5s;
     transition: color 0.5s;
 }
 
@@ -419,6 +460,5 @@ footer a {
 .github i:hover {
     color: #282828;
 }
-
 
 
