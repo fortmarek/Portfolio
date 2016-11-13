@@ -166,8 +166,8 @@ header {
 ----- PORTFOLIO ----- */
 
 .parallax {
-    -webkit-perspective: 1px;
-    perspective: 1px;
+    -webkit-perspective: 100px;
+    perspective: 100px;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: visible;
@@ -225,8 +225,8 @@ header {
 }
 
 .parallax-back {
-    -webkit-transform: translateZ(-0.1px) scale(1.1);
-    transform: translateZ(-0.1px) scale(1.1);
+    -webkit-transform: translateZ(20px) scale(.85);
+    transform: translateZ(20px) scale(.85);
 }
 
 .parallax-group {
@@ -246,14 +246,23 @@ header {
 
 .parallax-img-container {
     height: 100%;
-    width: 50%;
+
 }
 
 .parallax-img {
     height: 100%;
-    position: relative;
-    display: block;
-    margin: auto;
+    position: absolute;
+
+}
+
+.left-img {
+    left: 25%;
+    transform: translateX(-70%);
+}
+
+.right-img {
+    right: 25%;
+    transform: translateX(-70%);
 }
 
 #section-swipe {
@@ -266,11 +275,9 @@ header {
     overflow: hidden;
 }
 
-
-
 /* SCREENSHOT */
 
-#supl-img, #klozet-img {
+#supl-img, #klozet-img  {
     right: 0;
 }
 
