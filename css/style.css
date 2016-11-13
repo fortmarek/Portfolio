@@ -225,19 +225,19 @@ header {
 }
 
 .parallax-back {
-    -webkit-transform: translateZ(20px) scale(.85);
-    transform: translateZ(20px) scale(.85);
+    -webkit-transform: translateZ(30px) scale(.75);
+    transform: translateZ(30px) scale(.75);
 }
 
 .parallax-group {
-    margin-bottom: 200px;
     position: relative;
     height: 120vh;
     /*background-color: #3C9BFF;*/
+    margin-top: -40px;
 }
 
 .parallax-group:first-of-type {
-    margin-top: 70px;
+
 }
 
 .parallax-group:last-of-type {
@@ -256,13 +256,12 @@ header {
 }
 
 .left-img {
-    left: 25%;
-    transform: translateX(-70%);
+    transform: translateX(150%);
 }
 
 .right-img {
-    right: 25%;
-    transform: translateX(-70%);
+    right: -25%;
+    transform: translateX(-95%);
 }
 
 #section-swipe {
