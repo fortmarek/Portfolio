@@ -19,7 +19,6 @@ waypoint = $(window).height() * 2.2;
 
 inView('.summary h4')
     .on('enter', function(heading) {
-
         headingColor = summaryDict[heading.id];
 
         if (headingColor != lastColor) {
@@ -35,13 +34,9 @@ inView('.section-me').once('enter', function() {
 
 /* Navigation elements*/
 $('.portfolio-link').click(function() {
-    body = $('body');
-    scrollTop = body.scrollTop();
-    body.animate({scrollTop : $('.section-supl').offset().top}, 600);
+    $('.parallax').animate({scrollTop : $('.content').offset().top}, 600);
 });
 
 $('#about-link').click(function() {
-    body = $('body');
-    scrollTop = body.scrollTop();
-    body.animate({scrollTop : $('.section-me').offset().top}, 600);
+    $('.parallax').animate({scrollTop : $('.section-me').offset().top}, 600);
 });
