@@ -16,6 +16,12 @@ summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-hea
 
 waypoint = $(window).height() * 2.2;
 
+$(document).ready(function() {
+    console.log($(window).width())
+});
+
+
+
 
 inView('.summary h4')
     .on('enter', function(heading) {
@@ -34,9 +40,20 @@ inView('.section-me').once('enter', function() {
 
 /* Navigation elements*/
 $('.portfolio-link').click(function() {
-    $('.parallax').animate({scrollTop : $('.content').offset().top}, 600);
+    className = getClassName();
+    $(className).animate({scrollTop : $('.content').offset().top}, 600);
 });
 
 $('#about-link').click(function() {
-    $('.parallax').animate({scrollTop : $('.section-me').offset().top}, 600);
+    className = getClassName();
+    $(className).animate({scrollTop : $('.section-me').offset().top}, 600);
 });
+
+function getClassName() {
+    if ($(window).width() > 767) {
+        return '.parallax'
+    }
+    else {
+        return 'body'
+    }
+}
