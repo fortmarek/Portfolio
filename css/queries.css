@@ -6,49 +6,26 @@
         padding-bottom: 50px;
     }
 
-    .section-supl {
+    .container-supl {
         padding-bottom: 50px;
     }
 
-    .section-supl img {
+    .container-supl img {
         float: none;
         display: block;
     }
 
-    .section-supl .summary {
-        display: block;
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .section-swipe .summary {
-        display: block;
+    .container-swipe .app-btn {
         width: 90%;
         margin-left: 5%;
     }
 
-    .section-supl .summary h4, .section-swipe .summary h4, .section-supl .summary h4 {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .section-supl .summary p, .section-swipe .summary p  {
-        margin: 30px 0;
-        text-align: justify;
-    }
-
-    .section-swipe .summary p, .section-swipe .app-btn {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .section-supl img {
+    .container-supl img {
         width: 35%;
         margin-left: 32.5%;
     }
 
-    .section-swipe img {
+    .container-swipe img {
         margin-left: 40%;
         width: 20%;
     }
@@ -59,11 +36,11 @@
         display: block;
     }
 
-    .section-supl .app-btn {
+    .container-supl .app-btn {
         margin-left: 0;
     }
 
-    .section-swipe .summary {
+    .container-swipe .summary {
         float: left;
     }
 
@@ -73,9 +50,12 @@
         font-size: 16px;
         padding-top: 30px;
         padding-bottom: 40px;
-        text-align: justify;
+        text-align: center;
     }
 
+    .slide {
+        opacity: 1;
+    }
 
 
 }
@@ -85,12 +65,12 @@
 /* Small phones to small tablets : 481-767px */
 
 @media screen and (max-width: 767px) and (min-width: 481px) {
-    .section-supl img {
+    .container-supl img {
         width: 25%;
         margin-right: 12.5%;
     }
 
-    .section-swipe img {
+    .container-swipe img {
         margin-left: 15%;
         width: 20%;
     }
@@ -125,18 +105,76 @@
         display: none;
     }
 
-    .summary-container {
+    .section {
+        padding-bottom: 50px;
         width: 100%;
         position: relative;
-        height: 100vh;
     }
 
-    .section-supl {
-        padding-top: 30px;
+    #section-swipe {
+        background-color: #FF3D97;
     }
 
-    .section-swipe {
-        padding-bottom: 50px;
+    #section-klozet {
+        background-color: #FF7F00;
+    }
+
+
+    .summary h4 {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .summary p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .parallax-img-container {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .parallax-img {
+        width: 100%;
+    }
+
+    .summary-container {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+    }
+
+    .summary {
+        top: auto;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        padding-left: 0;
+    }
+
+    #supl-summary h4, #klozet-summary h4, #swipe-summary h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #supl-summary p, #klozet-summary p, #swipe-summary p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #container-supl .app-btn, #klozet-summary .app-btn, #container-swipe .app-btn {
+        margin-left: 0;
+    }
+
+    .container-supl {
+        padding-top: 20px;
+    }
+
+    .container-swipe {
+        padding-bottom: 20px;
     }
 
     .section-me {
@@ -158,6 +196,7 @@
     }
 
     .app-btn {
+        margin-bottom: 50px;
         font-size: 90%;
     }
 
@@ -221,10 +260,6 @@
         margin-top: -40px;
     }
 
-    .parallax-group:first-of-type {
-
-    }
-
     .parallax-group:last-of-type {
         margin-bottom: 100px;
     }
@@ -249,5 +284,7 @@
         width: 50%;
         right: 0;
     }
+
+
 }
 
