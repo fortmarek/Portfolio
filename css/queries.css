@@ -256,7 +256,7 @@
 
     .parallax-group {
         position: relative;
-        height: 120vh;
+        height: 110vh;
         margin-top: -40px;
     }
 
@@ -274,16 +274,14 @@
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
+        max-height: 100%;
+        max-width: 70%;
     }
 
-    .right-img {
-        width: 61%;
-    }
 
-    .left-img {
-        width: 50%;
-        right: 0;
-    }
+
+
+
 
 
 }

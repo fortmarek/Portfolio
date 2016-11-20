@@ -197,6 +197,15 @@ header {
     right: 0;
 }
 
+#swipe-img {
+    left: 0;
+}
+
+.left-img {
+    right: 0;
+    transform: translateX(100%);
+}
+
 /* SUMMARY */
 
 .summary {
@@ -330,7 +339,7 @@ footer p {
 /* SLIDE */
 
 .slide {
-    min-height: 100vh;
+    top: 50%;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     overflow: hidden;
