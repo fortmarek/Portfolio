@@ -203,7 +203,7 @@ header {
 
 .left-img {
     right: 0;
-    transform: translateX(100%);
+
 }
 
 /* SUMMARY */
@@ -215,14 +215,6 @@ header {
     -webkit-transform: translateY(-50%);
     padding-left: 1%;
     display: inline-block;
-}
-
-#supl-summary, #klozet-summary {
-    float: left;
-}
-
-#swipe-summary {
-    float: right;
 }
 
 #supl-summary h4, #klozet-summary h4 {

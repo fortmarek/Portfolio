@@ -93,7 +93,6 @@
 
     h3 {
         font-size: 180%;
-        padding-bottom: 20px;
     }
 
     h5 {
@@ -124,11 +123,12 @@
         text-align: center;
         margin-left: 0;
         margin-right: 0;
+        margin-top: 30px;
     }
 
 
     .summary p {
-        margin: 10px 0;
+        margin-bottom: 10px;
         text-align: center;
     }
 
@@ -155,8 +155,13 @@
         padding-left: 0;
     }
 
-    #supl-summary h4, #klozet-summary h4, #swipe-summary h4 {
+    #supl-summary h4, #klozet-summary h4 {
         margin-left: 0;
+        text-align: center;
+    }
+
+    #swipe-summary h4 {
+        margin-right: 0;
         text-align: center;
     }
 
@@ -165,8 +170,12 @@
         margin-right: 0;
     }
 
-    #container-supl .app-btn, #klozet-summary .app-btn, #container-swipe .app-btn {
+    #container-supl .app-btn, #klozet-summary .app-btn {
         margin-left: 0;
+    }
+
+    #container-swipe .app-btn {
+        margin-right: 0;
     }
 
     .container-supl {
