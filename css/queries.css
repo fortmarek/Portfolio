@@ -110,8 +110,16 @@
         position: relative;
     }
 
+    .content {
+        background-color: #3C9BFF;
+    }
+
     #section-swipe {
         background-color: #FF3D97;
+    }
+
+    #section-swipe h4 {
+        font-size: 150%;
     }
 
     #section-klozet {
@@ -128,7 +136,8 @@
 
 
     .summary p {
-        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
     }
 
@@ -143,8 +152,8 @@
 
     .summary-container {
         display: block;
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         height: auto;
     }
 
@@ -153,6 +162,8 @@
         transform: translateY(0);
         -webkit-transform: translateY(0);
         padding-left: 0;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     #supl-summary h4, #klozet-summary h4 {
