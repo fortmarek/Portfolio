@@ -172,7 +172,7 @@ header {
     transition: background-color 1.5s ease;
     overflow: visible;
     position: relative;
-    z-index: 1;
+    will-change: background-color;
 }
 
 .summary-container {
