@@ -11,13 +11,14 @@ translateValue = 0;
 shouldMove = true;
 enterIndex = 0;
 exitIndex = 0;
+windowWidth = 0;
 colors = ["#3C9BFF", "#FF3D97"];
 summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-heading": "#FF7F00"};
 
 waypoint = $(window).height() * 2.2;
 
 $(document).ready(function() {
-    console.log($(window).width())
+    windowWidth = $(window).width();
 });
 
 
@@ -25,12 +26,16 @@ $(document).ready(function() {
 
 inView('.summary h4')
     .on('enter', function(heading) {
-        headingColor = summaryDict[heading.id];
+        if (windowWidth > 767) {
+            headingColor = summaryDict[heading.id];
 
-        if (headingColor != lastColor) {
-            $('.content').css('background-color', (headingColor));
-            lastColor = headingColor;
+            if (headingColor != lastColor) {
+                $('.content').css('background-color', (headingColor));
+                lastColor = headingColor;
+            }
         }
+        
+
     });
 
 inView('.section-me').once('enter', function() {
@@ -50,7 +55,7 @@ $('#about-link').click(function() {
 });
 
 function getClassName() {
-    if ($(window).width() > 767) {
+    if (windowWidth > 767) {
         return '.parallax'
     }
     else {
