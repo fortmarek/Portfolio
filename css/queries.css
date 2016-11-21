@@ -272,6 +272,7 @@
     .parallax-back {
         -webkit-transform: translateZ(30px) scale(.71);
         transform: translateZ(30px) scale(.71);
+        will-change: transform;
     }
 
     .parallax-group {
@@ -296,13 +297,14 @@
         image-rendering: crisp-edges;
         -ms-interpolation-mode: nearest-neighbor;
 
-        
+
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         max-height: 100%;
         max-width: 70%;
+        will-change: transform;
     }
 }
 
