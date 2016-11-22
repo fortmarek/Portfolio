@@ -254,6 +254,25 @@
         height: 100vh;
     }
 
+    .parallax-img-container {
+        width: 50%;
+        float: right;
+        display: inline-block;
+    }
+
+    .summary-container {
+        float: left;
+        display: inline-block;
+        margin-right: 0;
+    }
+
+    .parallax-img {
+        max-height: 100%;
+        max-width: 85%;
+        margin: auto;
+        display: block;
+    }
+
     h4 {
         font-size: 175%;
     }
@@ -265,12 +284,6 @@
     .parallax-back {
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
-    }
-
-    .parallax-img {
-        max-height: 100%;
-        max-width: 85%;
-        right: 15%;
     }
 
     .section {

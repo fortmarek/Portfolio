@@ -3,14 +3,8 @@
  */
 
 
-isMobile = false;
-lastScroll = 1000;
+
 lastColor = "#3C9BFF";
-pixelsForScroll = 0;
-translateValue = 0;
-shouldMove = true;
-enterIndex = 0;
-exitIndex = 0;
 windowWidth = 0;
 colors = ["#3C9BFF", "#FF3D97"];
 summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-heading": "#FF7F00"};
