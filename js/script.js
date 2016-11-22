@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 inView('.summary h4')
     .on('enter', function(heading) {
-        if (windowWidth > 767) {
+        if (windowWidth > 1024) {
             headingColor = summaryDict[heading.id];
 
             if (headingColor != lastColor) {
@@ -34,8 +34,6 @@ inView('.summary h4')
                 lastColor = headingColor;
             }
         }
-        
-
     });
 
 inView('.section-me').once('enter', function() {
@@ -55,7 +53,7 @@ $('#about-link').click(function() {
 });
 
 function getClassName() {
-    if (windowWidth > 767) {
+    if (windowWidth > 1024) {
         return '.parallax'
     }
     else {
