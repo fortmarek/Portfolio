@@ -256,7 +256,7 @@
 
     .parallax-img-container {
         width: 50%;
-        float: right;
+        height: 100%;
         display: inline-block;
     }
 
@@ -265,6 +265,18 @@
         display: inline-block;
         margin-right: 0;
     }
+
+    #container-supl, #container-klozet {
+        float: left;
+        margin-right: 0;
+    }
+
+    #container-swipe {
+        float: right;
+        margin-left: 0;
+    }
+
+
 
     .parallax-img {
         max-height: 100%;
@@ -288,6 +300,10 @@
 
     .section {
         margin-bottom: 150px;
+    }
+
+    #section-klozet {
+        margin-bottom: 0;
     }
 
     .content {

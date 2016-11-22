@@ -5,22 +5,17 @@
 
 
 lastColor = "#3C9BFF";
-windowWidth = 0;
 colors = ["#3C9BFF", "#FF3D97"];
 summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-heading": "#FF7F00"};
 
-waypoint = $(window).height() * 2.2;
-
-$(document).ready(function() {
-    windowWidth = $(window).width();
-});
 
 
 
 
 inView('.summary h4')
     .on('enter', function(heading) {
-        if (windowWidth > 1024) {
+        console.log($(window).width());
+        if ($(window).width() > 767) {
             headingColor = summaryDict[heading.id];
 
             if (headingColor != lastColor) {
@@ -47,7 +42,7 @@ $('#about-link').click(function() {
 });
 
 function getClassName() {
-    if (windowWidth > 1024) {
+    if ($(window).width() > 1024) {
         return '.parallax'
     }
     else {
