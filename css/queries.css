@@ -110,22 +110,11 @@
         position: relative;
     }
 
-    .content {
-        background-color: #3C9BFF;
-    }
 
-    #section-swipe {
-        background-color: #FF3D97;
-    }
 
     #section-swipe h4 {
         font-size: 150%;
     }
-
-    #section-klozet {
-        background-color: #FF7F00;
-    }
-
 
     .summary h4 {
         text-align: center;
@@ -299,21 +288,32 @@
     }
 
     .section {
-        margin-bottom: 150px;
+        padding-bottom: 70px;
+        padding-top: 70px;
     }
 
     #section-klozet {
         margin-bottom: 0;
-    }
-
-    .content {
-        padding-bottom: 100px;
+        padding-bottom: 70px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     body::after {
         position: absolute;
+    }
+
+    .content {
+        background-color: #3C9BFF;
+    }
+
+    #section-swipe {
+        background-color: #FF3D97;
+    }
+
+
+    #section-klozet {
+        background-color: #FF7F00;
     }
 }
 

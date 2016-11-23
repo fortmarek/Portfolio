@@ -15,7 +15,7 @@ summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-hea
 inView('.summary h4')
     .on('enter', function(heading) {
         console.log($(window).width());
-        if ($(window).width() > 767) {
+        if ($(window).width() > 1024) {
             headingColor = summaryDict[heading.id];
 
             if (headingColor != lastColor) {
