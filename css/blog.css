@@ -46,7 +46,13 @@ h4:hover, h4:active {
 }
 
 .post {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     float: left;
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 0 10px #888888;
 }
 
 .title {
@@ -54,10 +60,7 @@ h4:hover, h4:active {
     text-align: center;
     font-size: 150%;
     font-weight: 200;
-}
-
-.title:hover, .title:active {
-    color: #0059FF;
+    padding-left: 20px;
 }
 
 a {
