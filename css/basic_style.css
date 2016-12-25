@@ -85,3 +85,39 @@ h5 {
     font-weight: 100;
     padding-bottom: 50px;
 }
+
+
+
+
+.main-nav {
+    overflow: hidden;
+    padding-top: 10px;
+    position: relative;
+}
+.main-nav p {
+    float: left;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.main-nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
