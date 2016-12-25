@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: 'Montserrat Hairline';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* Source Sans Pro for navi */
+
+html,body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 350%;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 100%;
+}
+
+
+h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 250%;
+    padding-top: 25px;
+}
+
+h3:after {
+    display: block;
+    height: 1px;
+    background-color: white;
+    content: " ";
+    width: 200px;
+    margin: 15px auto;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 300;
+}
+
+h5 {
+    color: white;
+    text-align: center;
+    font-size: 180%;
+    font-weight: 100;
+    padding-bottom: 50px;
+}
