@@ -7,6 +7,18 @@ header {
 
 }
 
+h3:after {
+    background-color: white;
+    height: 1px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 300;
+}
+
 .description {
     position: relative;
     top: 50%;

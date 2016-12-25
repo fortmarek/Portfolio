@@ -1,3 +1,8 @@
+body {
+    background-color: #FAFAFA;
+}
+
+
 h3 {
     color: #3C9BFF;
 }
@@ -15,6 +20,46 @@ a {
     border-bottom: 3px solid #3C9BFF;
 }
 
-.main-nav li {
-    color: red;
+.main-nav p {
+    color: #3C9BFF;
+}
+
+h3:after {
+    background-color: #3C9BFF;
+    height: 2px;
+}
+
+h4 {
+
+}
+
+h4:hover, h4:active {
+    color: #0096ED;
+}
+
+
+
+#blog-posts {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.post {
+    float: left;
+}
+
+.title {
+    color: #3C9BFF;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+.title:hover, .title:active {
+    color: #0059FF;
+}
+
+a {
+    text-decoration: none;
 }

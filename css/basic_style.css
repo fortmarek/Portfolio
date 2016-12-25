@@ -64,19 +64,12 @@ h3 {
 
 h3:after {
     display: block;
-    height: 1px;
-    background-color: white;
     content: " ";
     width: 200px;
     margin: 15px auto;
 }
 
-h4 {
-    color: white;
-    text-align: center;
-    font-size: 200%;
-    font-weight: 300;
-}
+
 
 h5 {
     color: white;
