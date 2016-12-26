@@ -85,6 +85,9 @@ h6 {
 }
 
 .post-text {
+    float: left;
+    padding-left: 25px;
+    width: 70%;
 }
 
 .link-post {
@@ -114,11 +117,6 @@ img {
     color: #393939;
 }
 
-.text, .info {
-    float: left;
-    padding-left: 25px;
-    width: 70%;
-}
 .social-links-big i {
     color: #5e5e5e;
 }
