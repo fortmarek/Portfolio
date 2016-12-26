@@ -11,11 +11,6 @@ p {
     font-family: 'Oxygen', sans-serif;
 }
 
-
-h3 {
-    color: #3C9BFF;
-}
-
 a {
     color: #3C9BFF;
 }
@@ -38,12 +33,18 @@ h3:after {
     height: 2px;
 }
 
-h4 {
 
-}
 
 h4:hover, h4:active {
     color: #0096ED;
+}
+
+h3 {
+    color: #3C9BFF;
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 25px;
+    margin-bottom: 30px;
 }
 
 h6 {
@@ -67,8 +68,9 @@ h6 {
 
 #blog-posts {
     width: 100%;
-    margin-left: 20%;
-    margin-top: 100px;
+    padding-left: 20%;
+    padding-top: 100px;
+    overflow: hidden;
 }
 
 .post {
@@ -77,9 +79,12 @@ h6 {
     margin-bottom: 40px;
     float: left;
     background-color: white;
-    width: 60%;
+    width: 80%;
     border-radius: 5px;
-    box-shadow: 0 0 10px #c6c6c6;
+    box-shadow: 0 0 30px #c6c6c6;
+}
+
+.post-text {
 }
 
 .link-post {
@@ -113,4 +118,16 @@ img {
     float: left;
     padding-left: 25px;
     width: 70%;
+}
+.social-links-big i {
+    color: #5e5e5e;
+}
+
+.github i:hover {
+    color: black;
+}
+
+
+.mail i:hover {
+    color: #ffd000;
 }

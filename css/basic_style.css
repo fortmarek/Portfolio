@@ -113,3 +113,50 @@ h5 {
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
+
+
+/* FOOTER */
+
+footer {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+footer a {
+    margin-left: 80px;
+}
+
+.social-links-small {
+    display: none;
+}
+
+.social-links-small i {
+    width: 24px;
+}
+
+.social-links-big {
+    display: block;
+}
+
+.social-links-big i {
+    width: 41px;
+}
+
+.twitter i, .mail i, .github i {
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.twitter {
+    margin-left: 0;
+}
+
+.twitter i:hover {
+    color: #0096ED;
+}
+
+.mail i:hover {
+    color: #EDB500;
+}
+
+
