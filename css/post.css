@@ -42,7 +42,7 @@ p {
     list-style: none;
     position: relative;
     width: 100%;
-    height: 85%;
+    height: 90%;
 }
 
 .slider li {
@@ -58,13 +58,20 @@ img {
     height: 100%;
 }
 
-
-.description {
+.description-box {
     position: absolute;
     width: 100%;
     height: 15%;
     top: 85%;
     background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0));
+    display: table;
+    text-align: center;
+}
+
+.description {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
     padding-left: 20px;
     letter-spacing: 1px;
     color: #222222;
@@ -72,19 +79,17 @@ img {
 
 .thumbnails {
     list-style: none;
-    position: absolute;
-    bottom: 10%;
-    height: 10%;
+    height: 15%;
     width: 100%;
 }
 
 .thumbnails li {
     height: 70px;
     width: 90px;
-    margin: auto;
     position: relative;
     overflow: hidden;
     float: right;
+
 }
 
 .thumb {
