@@ -77,3 +77,23 @@ img {
     letter-spacing: 1px;
     color: #222222;
 }
+
+.thumbnails {
+    list-style: none;
+    position: absolute;
+    bottom: calc(10% - 25px);
+    height: 10%;
+    width: 100%;
+}
+
+.thumbnails li {
+    height: 80px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb {
+    min-width: 100%;
+    min-height: 100%;
+}
