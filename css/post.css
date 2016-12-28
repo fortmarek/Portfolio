@@ -31,24 +31,11 @@ p {
     padding: 10px 10px;
     overflow: hidden;
     line-height: 70px;
-    position:  absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.aspect-box {
     width: 800px;
-    position: relative;
-    margin-left: -5%;
-    margin-bottom: 40px;
-}
-
-.aspect-box:before {
-    content: "";
-    display: block;
-    padding-top: 70%;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .slider {
@@ -60,7 +47,7 @@ img {
     top: 10px;
     left: 10px;
     padding-right: 20px;
-    height: 90%;
+    height: 85%;
     width: 100%;
 }
 
@@ -69,7 +56,9 @@ img {
     width: calc(100% - 20px);
     background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0));
     height: 10%;
-    bottom: calc(10% + 25px);
+    margin-left: 10px;
+    margin-bottom: -10px;
+    bottom: 10%;
 }
 
 .description {
@@ -81,16 +70,18 @@ img {
 .thumbnails {
     list-style: none;
     position: absolute;
-    bottom: calc(10% - 25px);
+    bottom: 10%;
     height: 10%;
     width: 100%;
 }
 
 .thumbnails li {
-    height: 80px;
-    width: 100px;
+    height: 70px;
+    width: 90px;
+    margin: auto;
     position: relative;
     overflow: hidden;
+    float: right;
 }
 
 .thumb {
