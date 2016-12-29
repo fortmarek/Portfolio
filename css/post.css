@@ -87,24 +87,27 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-left: 20px;
 }
 
 .thumbnails li {
     top: calc(50% + 5px);
     transform: translateY(-50%);
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 60px;
     position: relative;
     overflow: hidden;
     margin-right: 20px;
-    float: right;
-    box-shadow: 0 0 3px 2px #c6c6c6;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 3px #c6c6c6;
+
 }
 
 
 .thumbnails img {
-    height: 50px;
-    width: 50px;
+    min-height: 55px;
+    width: 60px;
+    height: auto;
     margin: auto;
 }
 
