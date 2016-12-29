@@ -29,6 +29,7 @@ p {
 }
 
 .slider-box {
+    position: relative;
     background-color: white;
     padding: 10px 10px;
     border-radius: 5px;
@@ -37,7 +38,6 @@ p {
     line-height: 70px;
     width: 810px;
     height: 610px;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -76,25 +76,31 @@ img {
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    padding-left: 20px;
     letter-spacing: 1px;
     color: #222222;
 }
 
 .thumbnails {
     list-style: none;
-    height: 15%;
+    height: 10%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .thumbnails li {
-    height: 40px;
-    width: 40px;
+    top: calc(50% + 5px);
+    transform: translateY(-50%);
+    height: 45px;
+    width: 45px;
     position: relative;
     overflow: hidden;
+    margin-right: 20px;
     float: right;
-    border: 2px solid #3C9BFF;
+    box-shadow: 0 0 3px 2px #c6c6c6;
 }
+
 
 .thumbnails img {
     height: 50px;
