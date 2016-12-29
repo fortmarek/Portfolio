@@ -1,5 +1,7 @@
 
-
+body {
+    background-color: #FAFAFA;
+}
 
 h6 {
     color: #3C9BFF;
@@ -27,12 +29,14 @@ p {
 }
 
 .slider-box {
-    background-color: black;
+    background-color: white;
     padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #c6c6c6;
     overflow: hidden;
     line-height: 70px;
-    width: 800px;
-    height: 600px;
+    width: 810px;
+    height: 610px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -84,12 +88,18 @@ img {
 }
 
 .thumbnails li {
-    height: 70px;
-    width: 90px;
+    height: 40px;
+    width: 40px;
     position: relative;
     overflow: hidden;
     float: right;
+    border: 2px solid #3C9BFF;
+}
 
+.thumbnails img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
 }
 
 .thumb {
