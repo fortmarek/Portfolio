@@ -103,15 +103,22 @@ img {
 
 }
 
+.thumb-box {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    height: 55px;
+    width: 60px;
+}
 
 .thumbnails img {
     min-height: 55px;
     width: 60px;
     height: auto;
     margin: auto;
+    z-index: -1;
 }
 
+
+
 .thumb {
-    min-width: 100%;
-    min-height: 100%;
+
 }
