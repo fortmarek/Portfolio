@@ -112,12 +112,6 @@ img {
 
 }
 
-.thumb-box {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
-    height: 55px;
-    width: 60px;
-}
-
 .thumbnails img {
     min-height: 55px;
     width: 60px;
@@ -126,8 +120,10 @@ img {
     z-index: -1;
 }
 
-
-
-.thumb {
-
+button {
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    height: 55px;
+    width: 60px;
+    border: none;
 }
