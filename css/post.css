@@ -54,6 +54,15 @@ p {
     height: 100%;
     top: 0;
     left: 0;
+
+}
+
+.unselected {
+    transform: translateX(-110%);
+}
+
+.selected {
+    transform: translateX(0);
 }
 
 img {
