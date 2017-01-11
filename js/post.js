@@ -6,6 +6,12 @@
 selected_now = 1;
 
 $('.thumbnails li').click(function(e) {
-    el = $(e.target.parentNode);
-    console.log(el.index());
+    index = $(e.target.parentNode).index();
+    thumb_list = $('.thumbnails');
+    thumb = thumb_list.children('li:nth(1)');
+    console.log(thumb.index());
+    button = thumb.children('button');
+    console.log(button);
+    button.addClass('selected-thumb');
 });
+

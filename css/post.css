@@ -121,9 +121,17 @@ img {
 }
 
 button {
+    background-color: transparent;
     cursor: pointer;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
     height: 55px;
     width: 60px;
     border: none;
+}
+
+.unselected-button {
+    background-color: transparent;
+}
+
+.selected-thumb {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
 }
