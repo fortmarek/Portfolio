@@ -57,12 +57,12 @@ p {
 
 }
 
-.unselected {
-    transform: translateX(-110%);
+.slider li {
+    opacity: 0;
 }
 
-.selected {
-    transform: translateX(0);
+.slider li:nth-child(1) {
+    opacity: 1;
 }
 
 img {
