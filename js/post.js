@@ -8,6 +8,22 @@ selected_now = 0;
 $('.thumbnails li').click(function(e) {
     index = $(e.target.parentNode).index();
 
+    change_image();
+
+    selected_now = index;
+});
+
+$('.right-arrow').click(function() {
+    index = selected_now + 1;
+
+    change_image();
+
+    selected_now = index;
+
+});
+
+
+function change_image() {
     thumb_list = $('.thumbnails');
 
     deselected_button = get_button(selected_now);
@@ -23,12 +39,7 @@ $('.thumbnails li').click(function(e) {
 
     img = slider_list.children().eq(index);
     img.css('opacity', ('1'));
-
-
-
-
-    selected_now = index;
-});
+}
 
 
 function get_button(index) {
