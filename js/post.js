@@ -3,7 +3,13 @@
  */
 
 
-selected_now = 0;
+(function($) {
+
+    $.Slider = function() {
+        this.selected_now = 0;
+    };
+
+}(jQuery));
 
 $('.thumbnails li').click(function(e) {
     index = $(e.target.parentNode).index();
@@ -14,12 +20,15 @@ $('.thumbnails li').click(function(e) {
 });
 
 $('.right-arrow').click(function() {
+    var player = new $.Slider(this.parent);
+    par = player instanceof $.Slider;
+    selected_now = par.selected_now;
     index = selected_now + 1;
 
     change_image();
 
-    selected_now = index;
-
+    par.selected_now = index;
+    console.log(par.selected_now);
 });
 
 
@@ -47,3 +56,7 @@ function get_button(index) {
     button = thumb.children('button');
     return button;
 }
+
+var player = new $.Slider($('.slider-box'));
+console.log(player.selected_now);
+console.log("LOG");
