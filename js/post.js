@@ -33,26 +33,20 @@ $('.right-arrow').click(function() {
 
     slider_box = $(this).parent();
 
-    if (slider_box.data('slider') == null) {
+    var slider_object = slider_box.data('slider');
+    if (slider_object == null) {
         thumb_list = slider_box.find('.thumbnails');
         slider_list = slider_box.find('.slider');
 
-        var slider_object = new Slider(thumb_list, slider_list);
+        slider_object = new Slider(thumb_list, slider_list);
         slider_box.data('slider', slider_object);
-    }
-
-
-
-    if (!(slider_box instanceof $.Slider)) {
-
-        $(this).parent() = new $.Slider(slider_box);
-        console.log($(this).parent().find('.thumbnails'));
+        console.log("HEy");
     }
 
     change_image(slider_box);
 
-    slider_box.selected_now += 1;
-    console.log(slider_box.selected_now);
+    slider_object.selected_now += 1;
+
 });
 
 
@@ -76,8 +70,7 @@ function change_image(slider_box) {
 }
 
 
-/*
-function get_button(slider_box, index) {
+/*function get_button(slider_box, index) {
     thumb = slider_box.thumb_list.eq(index);
     button = thumb.children('button');
     return button;
