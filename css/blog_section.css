@@ -17,16 +17,41 @@ a {
 
 .main-nav {
     color: #3C9BFF;
+    padding-bottom: 40px;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li .link:hover,
+.main-nav li .link:active {
     border-bottom: 1px solid #3C9BFF;
 }
 
 .main-nav p {
     color: #3C9BFF;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    /*display: none;*/
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: 1;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+
+}
+
 
 .social-links-big i {
     color: #5e5e5e;
