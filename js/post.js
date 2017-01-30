@@ -21,12 +21,14 @@ function Slider(thumb_list, slider_list) {
     this.slider_list = slider_list
 }
 
-$('.thumbnails li').click(function(e) {
-    index = $(e.target.parentNode).index();
+$('.thumbnails li').click(function() {
 
-    /*change_image();*/
+    thumb_list = $(this).parent();
+    slider_box = thumb_list.parent();
 
-    selected_now = index;
+    var slider_object = get_slider_object(slider_box);
+    select_next = thumb_list.find(this).index();
+    change_image(slider_object, select_next);
 });
 
 $('.left-arrow').click(function() {
