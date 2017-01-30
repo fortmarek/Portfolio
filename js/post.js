@@ -43,35 +43,36 @@ $('.right-arrow').click(function() {
         console.log("HEy");
     }
 
-    change_image(slider_box);
-
-    slider_object.selected_now += 1;
+    change_image(slider_object);
 
 });
 
 
-function change_image(slider_box) {
+function change_image(slider_object) {
 
-    /*deselected_button = get_button(slider_box.selected_now);*/
-    deselected_thumb = slider_box.thumb_list.find('li').eq(slider_box.selected_now);
-    deselected_button = deselected_thumb.children('button');
+    deselected_button = get_button(slider_object);
+    /*deselected_thumb = slider_box.thumb_list.find('li').eq(slider_box.selected_now);
+    deselected_button = deselected_thumb.children('button');*/
     deselected_button.removeClass('selected-thumb');
-    /*button = get_button(slider_box, index);*/
 
-    thumb = slider_box.thumb_list.find('li').eq(slider_box.selected_now + 1);
-    button = thumb.children('button');
-    button.addClass('selected-thumb');
-
-    deselected_img = slider_box.slider_list.eq(slider_box.selected_now);
+    deselected_img = slider_object.slider_list.eq(slider_object.selected_now);
     deselected_img.css('opacity', ('0'));
 
-    img = slider_box.slider_list.eq(slider_box.selected_now + 1);
+    slider_object.selected_now += 1;
+
+    button = get_button(slider_object);
+    /*thumb = slider_box.thumb_list.find('li').eq(slider_box.selected_now + 1);
+    button = thumb.children('button');*/
+    button.addClass('selected-thumb');
+
+    img = slider_box.slider_list.eq(slider_object.selected_now);
     img.css('opacity', ('1'));
 }
 
 
-/*function get_button(slider_box, index) {
-    thumb = slider_box.thumb_list.eq(index);
+function get_button(slider_object) {
+    console.log(slider_object.thumb_list);
+    thumb = slider_object.thumb_list.eq(slider_object.selected_now);
     button = thumb.children('button');
     return button;
-}*/
+}
