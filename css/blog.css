@@ -28,22 +28,12 @@ a {
     color: #3C9BFF;
 }
 
-h3:after {
-    background-color: #3C9BFF;
-    height: 2px;
-}
+
 
 h4:hover, h4:active {
     color: #0096ED;
 }
 
-h3 {
-    color: #3C9BFF;
-    font-weight: 300;
-    font-size: 150%;
-    padding-top: 25px;
-    margin-bottom: 30px;
-}
 
 h6 {
     color: #3C9BFF;

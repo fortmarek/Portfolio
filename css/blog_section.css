@@ -1,0 +1,25 @@
+h3 {
+    color: #3C9BFF;
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+h3:after {
+    background-color: #3C9BFF;
+    height: 2px;
+}
+
+.social-links-big i {
+    color: #5e5e5e;
+}
+
+.github i:hover {
+    color: black;
+}
+
+
+.mail i:hover {
+    color: #ffd000;
+}

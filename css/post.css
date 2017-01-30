@@ -29,6 +29,7 @@ p {
 }
 
 .slider-box {
+    margin-bottom: 20px;
     position: relative;
     background-color: white;
     padding: 10px 10px;
