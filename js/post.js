@@ -29,18 +29,28 @@ $('.thumbnails li').click(function(e) {
     selected_now = index;
 });
 
+$('.left-arrow').click(function() {
+
+    slider_box = $(this).parent();
+
+    var slider_object = get_slider_object(slider_box);
+
+    if (slider_object.selected_now <= 0) {
+        select_next = slider_object.slider_list.children().length - 1;
+        change_image(slider_object, select_next);
+    }
+    else {
+        change_image(slider_object, slider_object.selected_now - 1);
+    }
+
+
+});
+
 $('.right-arrow').click(function() {
 
     slider_box = $(this).parent();
 
-    var slider_object = slider_box.data('slider');
-    if (slider_object == null) {
-        thumb_list = slider_box.find('.thumbnails');
-        slider_list = slider_box.find('.slider');
-
-        slider_object = new Slider(thumb_list, slider_list);
-        slider_box.data('slider', slider_object);
-    }
+    var slider_object = get_slider_object(slider_box);
 
     if (slider_object.selected_now >= slider_object.slider_list.children().length - 1) {
         select_next = 0;
@@ -52,6 +62,18 @@ $('.right-arrow').click(function() {
 
 
 });
+
+function get_slider_object(slider_box) {
+    var slider_object = slider_box.data('slider');
+    if (slider_object == null) {
+        thumb_list = slider_box.find('.thumbnails');
+        slider_list = slider_box.find('.slider');
+
+        slider_object = new Slider(thumb_list, slider_list);
+        slider_box.data('slider', slider_object);
+    }
+    return slider_object;
+}
 
 
 function change_image(slider_object, select_next) {
