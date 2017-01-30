@@ -7,8 +7,8 @@
 
     $.Slider = function() {
         this.selected_now = 0;
-        this.thumb_list = this.find('thumbnails');
-        this.slider_list = this.find('slider');
+        this.thumb_list = $(this).find('.thumbnails');
+        this.slider_list = $(this).find('.slider');
     };
 
 }(jQuery));
