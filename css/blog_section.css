@@ -11,6 +11,23 @@ h3:after {
     height: 2px;
 }
 
+a {
+    color: #3C9BFF;
+}
+
+.main-nav {
+    color: #3C9BFF;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #3C9BFF;
+}
+
+.main-nav p {
+    color: #3C9BFF;
+}
+
 .social-links-big i {
     color: #5e5e5e;
 }

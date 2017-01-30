@@ -3,6 +3,10 @@ body {
     background-color: #FAFAFA;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 h6 {
     color: #3C9BFF;
     font-size: 200%;

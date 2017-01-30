@@ -11,22 +11,6 @@ p {
     font-family: 'Oxygen', sans-serif;
 }
 
-a {
-    color: #3C9BFF;
-}
-
-.main-nav {
-    color: #3C9BFF;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 3px solid #3C9BFF;
-}
-
-.main-nav p {
-    color: #3C9BFF;
-}
 
 
 
