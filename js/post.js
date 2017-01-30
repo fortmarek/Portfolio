@@ -3,16 +3,23 @@
  */
 
 
-(function($) {
+/*(function($) {
 
     $.Slider = function() {
-        this.selected_now = 0;
+        this.selected_now = 1;
         this.thumb_list = $(this).find('.thumbnails');
         this.slider_list = $(this).find('.slider');
 
     };
 
-}(jQuery));
+}(jQuery));*/
+
+
+function Slider(thumb_list, slider_list) {
+    this.selected_now = 0;
+    this.thumb_list = thumb_list;
+    this.slider_list = slider_list
+}
 
 $('.thumbnails li').click(function(e) {
     index = $(e.target.parentNode).index();
@@ -24,11 +31,22 @@ $('.thumbnails li').click(function(e) {
 
 $('.right-arrow').click(function() {
 
-    slider_box = $(this).parent('.slider-box');
+    slider_box = $(this).parent();
+
+    if (slider_box.data('slider') == null) {
+        thumb_list = slider_box.find('.thumbnails');
+        slider_list = slider_box.find('.slider');
+
+        var slider_object = new Slider(thumb_list, slider_list);
+        slider_box.data('slider', slider_object);
+    }
+
+
 
     if (!(slider_box instanceof $.Slider)) {
 
-        slider_box = new $.Slider(slider_box);
+        $(this).parent() = new $.Slider(slider_box);
+        console.log($(this).parent().find('.thumbnails'));
     }
 
     change_image(slider_box);
