@@ -5,10 +5,11 @@
 
 (function($) {
 
-    $.Slider = function(el) {
+    $.Slider = function() {
         this.selected_now = 0;
         this.thumb_list = $(this).find('.thumbnails');
         this.slider_list = $(this).find('.slider');
+
     };
 
 }(jQuery));
@@ -22,25 +23,29 @@ $('.thumbnails li').click(function(e) {
 });
 
 $('.right-arrow').click(function() {
-    if (!(this.parent instanceof $.Slider)) {
-        this.parent = new $.Slider(this.parent);
-        console.log(this.parent.selected_now);
+
+    slider_box = $(this).parent('.slider-box');
+
+    if (!(slider_box instanceof $.Slider)) {
+
+        slider_box = new $.Slider(slider_box);
     }
 
-    change_image(this.parent);
+    change_image(slider_box);
 
-    this.parent.selected_now += 1;
+    slider_box.selected_now += 1;
+    console.log(slider_box.selected_now);
 });
 
 
 function change_image(slider_box) {
-    console.log(slider_box.selected_now);
+
     /*deselected_button = get_button(slider_box.selected_now);*/
     deselected_thumb = slider_box.thumb_list.find('li').eq(slider_box.selected_now);
     deselected_button = deselected_thumb.children('button');
     deselected_button.removeClass('selected-thumb');
     /*button = get_button(slider_box, index);*/
-    console.log(slider_box.thumb_list);
+
     thumb = slider_box.thumb_list.find('li').eq(slider_box.selected_now + 1);
     button = thumb.children('button');
     button.addClass('selected-thumb');
