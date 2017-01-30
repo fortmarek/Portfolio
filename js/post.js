@@ -40,21 +40,28 @@ $('.right-arrow').click(function() {
 
         slider_object = new Slider(thumb_list, slider_list);
         slider_box.data('slider', slider_object);
-        console.log("HEy");
     }
 
-    change_image(slider_object);
+    if (slider_object.selected_now >= slider_object.slider_list.children().length - 1) {
+        select_next = 0;
+        change_image(slider_object, select_next);
+    }
+    else {
+        change_image(slider_object, slider_object.selected_now + 1);
+    }
+
+
 });
 
 
-function change_image(slider_object) {
+function change_image(slider_object, select_next) {
 
     deselected_button = get_button(slider_object);
     deselected_button.removeClass('selected-thumb');
     deselected_img = slider_object.slider_list.find('li').eq(slider_object.selected_now);
     deselected_img.css('opacity', ('0'));
 
-    slider_object.selected_now += 1;
+    slider_object.selected_now = select_next;
 
     button = get_button(slider_object);
     button.addClass('selected-thumb');
