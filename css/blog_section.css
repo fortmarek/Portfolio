@@ -17,7 +17,7 @@ a {
 
 .main-nav {
     color: #3C9BFF;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .main-nav li .link:hover,
@@ -34,13 +34,28 @@ a {
     display: inline-block;
 }
 
+.dropdown-content::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
 .dropdown-content {
     /*display: none;*/
     position: absolute;
+    left: -10px;
     bottom: 0;
-    transform: translateY(100%);
+    transform: translateY(calc(100% + 10px));
     z-index: 1;
     display: block;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 10px #c6c6c6;
 }
 
 .dropdown:hover .dropdown-content {
