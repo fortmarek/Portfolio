@@ -34,28 +34,37 @@ a {
     display: inline-block;
 }
 
-.dropdown-content::after{
+.dropdown:hover .dropdown-content::after {
     content: '';
     position: absolute;
     top: -7px;
-    left: 20px;
+    left: 40px;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #fafafa;
     filter: drop-shadow(0 -3px 4px #c6c6c6);
 }
 
+
+
+.dropdown:hover .dropdown-content, .dropdown-content:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity linear .1s;
+}
+
 .dropdown-content {
-    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    left: -10px;
+    left: -15px;
     bottom: 0;
     transform: translateY(calc(100% + 9px));
-    display: block;
     background-color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     box-shadow: 0 5px 15px 3px #c6c6c6;
+    width: 100px;
 
 }
 
