@@ -72,16 +72,13 @@ a {
     border-radius: 5px;
     box-shadow: 0 5px 15px 3px #c6c6c6;
     width: 100px;
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropdown-content a {
     display: block;
     text-align: center;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 500;
 }
 
 .dropdown-content li {
@@ -100,4 +97,9 @@ a {
 
 .mail i:hover {
     color: #ffd000;
+}
+
+
+@media screen and (max-width: 767px) {
+
 }
