@@ -167,7 +167,11 @@ footer a {
 @media screen and (max-width: 767px) and (max-device-width: 767px) {
     .main-nav li a:link,
     .main-nav li a:visited {
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+
+    * {
+        font-size: 18px;
     }
 }
 
@@ -176,4 +180,5 @@ footer a {
     .main-nav li a:visited {
         font-size: .8em;
     }
+
 }
