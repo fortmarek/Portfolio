@@ -95,7 +95,6 @@ function change_image(slider_object, select_next) {
 
 
 function get_button(slider_object) {
-    console.log(slider_object.selected_now);
     thumb = slider_object.thumb_list.find('li').eq(slider_object.selected_now);
     button = thumb.find('button');
     return button;

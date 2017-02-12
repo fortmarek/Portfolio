@@ -14,7 +14,7 @@ h6 {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
     .post {
         width: 90%;
 
@@ -23,9 +23,11 @@ h6 {
     .post-paragraph {
         line-height: 30px;
     }
+
+
 }
 
-@media screen and (min-width: 768px) and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
     .post {
         width: 700px;
     }
@@ -33,8 +35,42 @@ h6 {
     .post-paragraph {
         line-height: 34px;
     }
+
+
 }
 
+@media screen and (max-width: 819px) {
+    .slider-wrapper {
+        width: 95%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .slider-wrapper:after {
+        padding-top: 75%;
+        display: block;
+        content: '';
+    }
+
+    .slider-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 820px) {
+    .slider-box {
+        width: 810px;
+        height: 610px;
+    }
+}
 
 .post {
     display: block;
@@ -60,8 +96,6 @@ p {
     box-shadow: 0 0 30px #c6c6c6;
     overflow: hidden;
     line-height: 70px;
-    width: 810px;
-    height: 610px;
     left: 50%;
     transform: translateX(-50%);
 }
