@@ -1,3 +1,15 @@
+@media screen and (max-width: 767px) {
+    .main-nav {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-nav {
+        padding-bottom: 60px;
+    }
+}
+
 h3 {
     color: #3C9BFF;
     font-weight: 300;
@@ -17,7 +29,6 @@ a {
 
 .main-nav {
     color: #3C9BFF;
-    padding-bottom: 60px;
 }
 
 .main-nav li .link:hover,
