@@ -39,6 +39,11 @@ h6 {
 }
 
 @media screen and (max-width: 667px) {
+
+    .slider-wrapper {
+        margin-bottom: 80px;
+    }
+
     .slider {
         height: calc(100% - 45px);
     }
@@ -60,6 +65,13 @@ h6 {
         height: 45px;
         width: 50px;
     }
+
+    button {
+        height: 45px;
+        width: 50px;
+    }
+
+
 }
 
 @media screen and (min-width: 668px) {
@@ -72,9 +84,19 @@ h6 {
         height: 55px;
         width: 60px;
     }
+
+    button {
+        height: 55px;
+        width: 60px;
+    }
 }
 
 @media screen and (min-width: 668px) and (max-width: 819px) {
+
+    .slider-wrapper {
+        margin-bottom: 90px;
+    }
+
     .slider {
         height: calc(100% - 70px);
     }
@@ -89,7 +111,6 @@ h6 {
         width: 95%;
         display: block;
         position: relative;
-        margin-bottom: 10%;
     }
 
     .slider-wrapper:after {
@@ -218,8 +239,6 @@ img {
 .thumbnails li {
     top: calc(50% + 5px);
     transform: translateY(-50%);
-    /*height: 55px;
-    width: 60px;*/
     position: relative;
     overflow: hidden;
     margin-right: 20px;
@@ -229,8 +248,6 @@ img {
 }
 
 .thumbnails img {
-    /*min-height: 55px;
-    width: 60px;*/
     height: auto;
     margin: auto;
     z-index: -1;
@@ -239,8 +256,6 @@ img {
 button {
     background-color: transparent;
     cursor: pointer;
-    height: 55px;
-    width: 60px;
     border: none;
 }
 
