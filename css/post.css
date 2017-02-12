@@ -14,30 +14,6 @@ h6 {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-    .post {
-        width: 90%;
-    }
-
-    .post-paragraph {
-        line-height: 30px;
-    }
-
-
-}
-
-@media screen and (min-width: 768px) {
-    .post {
-        width: 700px;
-    }
-
-    .post-paragraph {
-        line-height: 34px;
-    }
-
-
-}
-
 @media screen and (max-width: 667px) {
 
     .slider-wrapper {
@@ -129,7 +105,13 @@ h6 {
         height: calc(100% + 70px);
     }
 
+    .post {
+        width: 90%;
+    }
 
+    .post-paragraph {
+        line-height: 30px;
+    }
 
 }
 
@@ -152,6 +134,14 @@ h6 {
 
     .thumbnails {
         height: 10%;
+    }
+
+    .post {
+        width: 700px;
+    }
+
+    .post-paragraph {
+        line-height: 34px;
     }
 }
 
