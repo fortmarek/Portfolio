@@ -6,6 +6,7 @@
     <meta name="description" content="Marek Fořt - nejen iOS developer">
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="data:;base64,=">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/basic_style.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -61,30 +62,42 @@
 
     <h3 id="portfolio">PORTFOLIO</h3>
 
-    <div class="parallax-group section" id="section-supl">
+    <div class="parallax-group section" id="section-elisa">
 
-        <div class="summary-container parallax-layer parallax-base" id="container-supl">
-
-            <!--<img src="img/supl-min.png" id="supl-screen">-->
-<!---->
-            <div class="summary" id="supl-summary">
-
-                <h4 id="supl-heading">Supl</h4>
-                <p>Supl je iOS aplikace pro velkou část českých studentů. Pomocí systému Bakaláři si uživatel nejenom může jednoduše zobrazit nadcházející změny v rozvrhu, ale aplikace uživateli také posílá notifikace, jakmile se v rozrvhu objeví nová změna.
+        <div class="summary-container parallax-layer parallax-base" id="container-elisa">
+            <!--<img src="img/Left-min.png" id="perspective-screen">-->
+            <div class="summary" id="elisa-summary">
+                <h4 id="elisa-heading">Elisa</h4>
+                <p>Elisa je aplikace, která pomocí swipování a minitestů pomáhá se naučit věci rychle a efektivně. Celou aplikaci jsem až na backend a design dělal sám.
                 </p>
-                <!--<p>Supl is an iOS app for many Czech students. It uses Bakalari system to
-                    and it not only enables the user to see any changes in his school schedule but the app
-                    automatically notifies him.</p>-->
-                <a href="https://itunes.apple.com/cz/app/supl/id1040536837?mt=8" class="app-btn" target="_blank">Stáhnout v App Store<i class="fa fa-apple"></i></a>
-
+                <a href="https://itunes.apple.com/US/app/id1270229187?mt=8" class="app-btn" target="_blank">Stáhnout na AppStore<i class="fa fa-apple"></i></a>
             </div>
         </div>
-        <div id="supl-img" class="parallax-img-container parallax-layer parallax-back">
-            <img class="parallax-img right-img" src="img/supl-min.png">
+
+        <div id="elisa-img" class="parallax-img-container parallax-layer parallax-back">
+            <img class="parallax-img right-img" src="img/elisa-min.png">
         </div>
+
 
     </div>
 
+    <div class="parallax-group section" id="section-klozet">
+
+        <div class="summary-container parallax-layer parallax-base" id="container-klozet">
+            <!--<img src="img/Left-min.png" id="perspective-screen">-->
+            <div class="summary" id="klozet-summary">
+                <h4 id="klozet-heading">Klozet</h4>
+                <p>Klozet je aplikace, která zobrazuje veřejné záchody nejenom v Praze. Původně jsem používal statická data z open dat Prahy, později jsem aplikaci předělal tak, aby se daly přidávat i nové záchody.
+                </p>
+                <a href="https://itunes.apple.com/us/app/klozet-prague-toilets/id1170530956?mt=8" class="app-btn" target="_blank">Stáhnout na AppStore<i class="fa fa-apple"></i></a>
+            </div>
+        </div>
+
+        <div id="klozet-img" class="parallax-img-container parallax-layer parallax-back">
+            <img class="right-img parallax-img" src="img/klozet-min.png">
+        </div>
+
+    </div>
 
     <div class="parallax-group section" id="section-swipe">
 
@@ -104,25 +117,31 @@
 
     </div>
 
-    <div class="parallax-group section" id="section-klozet">
-
-        <div class="summary-container parallax-layer parallax-base" id="container-klozet">
-            <!--<img src="img/Left-min.png" id="perspective-screen">-->
-            <div class="summary" id="klozet-summary">
-                <h4 id="klozet-heading">Klozet</h4>
-                <p>SwipeViewController je modifikace navigační lišty, která umožňuje jednoduše přepínat mezi různými stránkami aplikace a zároveň šetří místo, což umožňuje vývojáři dát větší prostor obsahu aplikace. Vše jde stáhnout velmi jednoduše pomocí populárních CocoaPods či Carthage.
-                </p>
-                <a href="https://github.com/fortmarek/SwipeViewController" class="app-btn" target="_blank">Přístupné na Github<i class="fa fa-github"></i></a>
-            </div>
-        </div>
-
-        <div id="klozet-img" class="parallax-img-container parallax-layer parallax-back">
-            <img class="right-img parallax-img" src="img/klozet.png">
-        </div>
+    <div id="background">
 
     </div>
 
-    <div id="background">
+    <div class="parallax-group section" id="section-supl">
+
+        <div class="summary-container parallax-layer parallax-base" id="container-supl">
+
+            <!--<img src="img/supl-min.png" id="supl-screen">-->
+            <!---->
+            <div class="summary" id="supl-summary">
+
+                <h4 id="supl-heading">Supl</h4>
+                <p>Supl je iOS aplikace pro velkou část českých studentů. Pomocí systému Bakaláři si uživatel nejenom může jednoduše zobrazit nadcházející změny v rozvrhu, ale aplikace uživateli také posílá notifikace, jakmile se v rozrvhu objeví nová změna.
+                </p>
+                <!--<p>Supl is an iOS app for many Czech students. It uses Bakalari system to
+                    and it not only enables the user to see any changes in his school schedule but the app
+                    automatically notifies him.</p>-->
+                <a href="https://itunes.apple.com/cz/app/supl/id1040536837?mt=8" class="app-btn" target="_blank">Stáhnout na App Store<i class="fa fa-apple"></i></a>
+
+            </div>
+        </div>
+        <div id="supl-img" class="parallax-img-container parallax-layer parallax-back">
+            <img class="parallax-img right-img" src="img/supl-min.png">
+        </div>
 
     </div>
 </div>

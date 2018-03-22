@@ -351,7 +351,7 @@
     }
 
     .parallax-group:last-of-type {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .parallax-img-container {

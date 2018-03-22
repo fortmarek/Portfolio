@@ -69,7 +69,7 @@ h4 {
 
 
 .content {
-    background-color: #3C9BFF;
+    background-color: #6665FF;
     -webkit-transition: background-color 1.5s ease;
     transition: background-color 1.5s ease;
     overflow: visible;
@@ -83,7 +83,7 @@ h4 {
 }
 
 
-#container-swipe {
+#container-swipe, #container-klozet {
     right: 0;
 }
 
@@ -95,7 +95,7 @@ h4 {
 
 /* SCREENSHOT */
 
-#supl-img, #klozet-img  {
+#supl-img, #elisa-img  {
     right: 0;
 }
 
@@ -103,7 +103,11 @@ h4 {
     left: 0;
 }
 
-.left-img {
+#klozet-img {
+    left: 12%;
+}
+
+ .left-img {
     right: 0;
 
 }
@@ -112,19 +116,19 @@ h4 {
 
 .summary {
     position: relative;
-    top: 50%;
+    margin-top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     padding-left: 1%;
     display: inline-block;
 }
 
-#supl-summary h4, #klozet-summary h4 {
+#supl-summary h4, #elisa-summary h4 {
     margin-left: 15%;
     text-align: left;
 }
 
-#swipe-summary h4 {
+#swipe-summary h4, #klozet-summary h4 {
     margin-right: 15%;
     text-align: left;
 }
@@ -138,21 +142,21 @@ h4 {
     text-align: start;
 }
 
-#supl-summary p, #klozet-summary p {
+#supl-summary p, #elisa-summary p {
     margin-left: 15%;
 }
-#swipe-summary p {
+#swipe-summary p, #klozet-summary p {
     margin-right: 15%;
 }
 
 /* BUTTON */
 
-#container-supl .app-btn, #klozet-summary .app-btn {
+#container-supl .app-btn, #elisa-summary .app-btn {
     margin-left: 15%;
     text-decoration: none;
 }
 
-#container-swipe .app-btn {
+#container-swipe .app-btn, #klozet-summary .app-btn {
     margin-right: 15%;
     text-decoration: none;
 }

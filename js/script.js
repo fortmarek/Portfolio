@@ -4,11 +4,9 @@
 
 
 
-lastColor = "#3C9BFF";
-colors = ["#3C9BFF", "#FF3D97"];
-summaryDict = {"supl-heading":"#3C9BFF", "swipe-heading": "#FF3D97", "klozet-heading": "#FF7F00"};
-
-
+lastColor = "#6665FF";
+colors = ["#6665FF", "#FF3D97"];
+summaryDict = {"elisa-heading":"#6665FF", "klozet-heading": "#FF7F00", "swipe-heading": "#FF3D97", "supl-heading":"#3C9BFF" };
 
 
 
