@@ -95,21 +95,16 @@ h4 {
 
 /* SCREENSHOT */
 
-#supl-img, #elisa-img  {
-    right: 0;
-}
-
-#swipe-img {
-    left: 0;
-}
-
 #klozet-img {
     left: 12%;
 }
 
- .left-img {
-    right: 0;
+#swipe-img {
+    left: 15%;
+}
 
+#supl-img, #elisa-img {
+    right: 0;
 }
 
 /* SUMMARY */
